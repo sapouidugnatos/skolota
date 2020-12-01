@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>akinakah</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+
+</style>
+</head>
+<body class='typora-export'>
+<div id='write'  class=''><h1><a name="akīnakāh-the-scythian-ares" class="md-header-anchor"></a><span>Akīnakāh: The Scythian Ares</span></h1><h4><a name="by-kanaxšayąs" class="md-header-anchor"></a><em><span>by Kanaxšayąs</span></em></h4><p><img src="/home/chrx/Documents/art/akinakah-small.png" referrerpolicy="no-referrer"></p><p><span>Very little knowledge of the religious beliefs and practices of the Scythian peoples has come down to us, and that which has is often (probably unintentionally) distorted or obfuscated by the authors that recorded evidence of these beliefs and practices, most notably Herodotus. Of particular note is the only instance of Scythian ritual behavior that Herodotus records. Herodotus tells us: </span></p><blockquote><p><em><span>&quot;It is their practice to make images and altars and shrines for Ares, but for no other god... their sacrifices to Ares are of this sort. Every district in each of the governments has a structure sacred to Ares; namely, a pile of bundles of sticks three eighths of a mile wide and long, but of a lesser height, on the top of which there is a flattened four-sided surface; three of its sides are sheer, but the fourth can be ascended. Every year a hundred and fifty wagon-loads of sticks are heaped upon this; for the storms of winter always make it sink down. On this sacred pile an ancient scimitar of iron is set for each people: their image of Ares. They bring yearly sacrifice of sheep and goats and horses to this scimitar, offering to these symbols even more than they do to the other gods.&quot;</span></em><sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup><span> </span></p></blockquote><p><span>Unfortunately, &quot;Ares&quot; is one of three deities for which Herodotus does not list a Scythian name. However, this type of sword worship is also attested among the Sarmatians, Alans, Huns, and, most fortunately, the Xiongnu. Ch&#39;ü-Hsün, in analyzing Chinese literary references to probable sword worship originating in the Xiongnu cult of </span><em><span>Ching lu shen</span></em><span>, is able to conclude that </span><em><span>Ching lu</span></em><span> was used to refer to both the sword itself and the deity that it represents, and is probably a loan of the same Iranian word which appears in Greek as </span><em><span>ἀκινάκης</span></em><span> and subsequently in Latin as </span><em><span>acīnacēs</span></em><span>.</span><sup class='md-footnote'><a href='#dfref-footnote-2' name='ref-footnote-2'>2</a></sup><span> This may very well indicate that the inherited Iranian martial deity of the Scythians took on the form of the hypostasis of the Scythian sword itself. If the name of this sword can be posited as the name of the Scythian &quot;Ares&quot;, then morphology must be considered. The word has been tentatively reconstructed in Old Persian as the neuter h-stem </span><span>*</span><em><span>akīnakaʰ-</span></em><span>.</span><sup class='md-footnote'><a href='#dfref-footnote-3' name='ref-footnote-3'>3</a></sup><span> If this morphology were to be applied to the lexeme within a general Old Iranian framework, it would likely yield something to the tune of </span><span>*</span><em><span>akīnakah-</span></em><span>, a neuter h-stem when referring to the sword itself, which would become </span><span>*</span><em><span>Akīnakāh</span></em><span> in the nom.sing.masc. when referring to the deity.</span></p><p><span>Of course, there is no guarantee that the Xiongnu were Iranian-speaking at any level. However, the name for the distinctive Iranian-style sword for this period, which has attestations across the entire Eurasian steppe, may very well have been an areal culture word. This may find support in the apparent origin of the word (and very possibly its cult) from North Caucasian. According to Kullanda:</span></p><blockquote><p><em><span>&quot;</span><strong><span>ἀκινάκης </span></strong><span>Περσικὸν ξίφος, &quot;Persian sword&quot;, after Herodotus (VII 54). The latter, however, also designates the Scythian swords (IV 62; 70). This word also existed in Sogdian (kyn&#39;k) (compare above). Non-original, since in Iranian </span><span>*</span><span>ki would give ci. In Greek it is recognized as a borrowing, usually Iranian (Frisk 1960-73, 1: 53; Chantraine 1999: 47) or pre-Greek substratum (Beekes 2009,1: 51); no etymology is proposed. Apparently, a borrowing from the Proto-Nakh </span><span>*</span><span>ɦāhḳ́i (&#39;iron&#39;; compare the Batsbi ʕajhḳǐ &#39;id&#39;; other Nakh forms, the Proto-Nakh reconstruction and the Proto-North Caucasian etymology see NCED: 851-852) + -in (adjective suffix) + neḳV (cf. Batsbi neḳ &#39;knife&#39;) &#39;iron knife&#39;. The compound </span><span>*</span><span>ɦāhḳ́i-in explains the longitude of the iota, which Latin prosody indicates in borrowing from the Greek as acīnacēs: in the ode of Horace (Hor. Od. 1,27,5) this word is in the last place in the first line of Alkeev&#39;s eleven-syllable verse, in which the third from the end the syllable can only be long (cf. Chantraine 1999: 47; Beekes 2009, I: 51).&quot;</span></em><sup class='md-footnote'><a href='#dfref-footnote-4' name='ref-footnote-4'>4</a></sup></p></blockquote><p><span>Evidence for a Caucasian origin of this sword cult may potentially also be found in the Nart epics of the Ossetians, an Iranian-speaking people of the Caucasus and likely descendents of the Alans, a steppe Iranian people who likely continued the Scythian sword cult in their own religion.</span><sup class='md-footnote'><a href='#dfref-footnote-5' name='ref-footnote-5'>5</a></sup><span> One of the heroes of the Nart epic, a warrior named </span><em><span>Batraz</span></em><span>, has been associated with the Scythian &quot;Ares&quot; for a multitude of reasons. According to Raevsky:</span></p><blockquote><p><em><span>&quot;One of the main characters in the Ossetic Nartic epos is the brave but rather unbridled warrior Batraz, who acted many times as a protector of his compatriots from various enemies. He was made of hardened steel and was most closely bound to his sword: he was immortal until his sword was unbroken. This has led researchers to the logical conclusion that in the concrete case the sword was nothing but the incarnation of the hero himself. There is an opinion that both the Scythian Ares and the Ossetic Batraz were identical to the ancient Iranian war-god Vrtragna.</span></em></p><p><em><span>On the other hand, the quadrangular shape of the sacrificial altar of this Scythian deity, taken by itself, is directly related to the quadrilateral structure of space characterized above, whereas the sword thrust into the centre of this sacrificial altar was one of the incarnations of the world&#39;s axis which models the vertical structure of the Universe and links its three zones. In this way, the altar of the &#39;Scythian Ares&#39; is simply a model of the Universe, moreover predominantly of its middle zone - the air space. Apparently, the way in which sacrifices were offered to that deity - by throwing severed arms high into the air - was also connected with that function of the god.</span></em></p><p><em><span>The &#39;successor&#39; of the Scythian god - the Ossetic Batraz - also inhabited the air space and often acquired the image of the devastating whirlwind. And finally, we shall adduce here the evidence of the Greek author Lukianos, who was well familiar with the realia of Scythian culture and probably had first-hand knowledge of many motifs of Scythian folklore. In one of his works devoted to Scythian themes (Toxaris, 38) he reports that the Scythians worshipped the Wind and the Sword as gods. Indeed, these images seem to be opposed: the first one is a source of life, while the second one brings death. However, the very fact of their juxtaposing was hardly accidental. It suggests rather that this passage reflects a certain ambivalence of the unified Scythian image. What is more, researchers have drawn attention to the fact that the actual shaping of the tip and of the hilt of the ancient sword definitely resembles a phallus. Thus, this lethal weapon simultaneously acquires the form of a life-giving organ, which is an illustration of the discussed ambivalence.&quot;</span></em><sup class='md-footnote'><a href='#dfref-footnote-6' name='ref-footnote-6'>6</a></sup><span> </span></p></blockquote><p><span>This connection is elaborated in even further detail by Abaev:</span></p><blockquote><p><span>	</span><em><span>&quot;The connection between Batraz and the heathen cults of the Scythians and the ancient Aryans is supported by several direct parallels drawn by Dumézil.8 The ceremony of casting Batraz’s sword into the sea compares with the cult of the sword among the Scythians and Alans. The bonfire of “a hundred wagonloads of coal,” into which Batraz strides to become tempered before the trembling Narts, recalls the grandiose annual construction of a fire of “a hundred and fifty cartloads of logs,” which served the Scythians as a pedestal for their sword god, around which were slaughtered their trembling war captives.</span></em></p><p><span>	</span><em><span>In one tale recorded by Dzhantemir Shanaev, Batraz’s sword itself acts as a thunder-god. “The story,” says Shanaev, “asserts that Batraz’s sword was cast into the Black Sea.” He adds that “when the lightning flashes from the west Ossetians regard it as the gleam of Batraz’s sword, hurling itself out of the sea against the heavens to destroy evil powers and devils” (from Shanaev 1871).</span></em></p><p><span>	</span><em><span>Beside the array of traits characterizing Batraz as a mythical symbol of a thunder-god, there still remain in his cycle many motifs that in their turn have wide parallels in world folklore. The clear parallel from Scythian customs, to which Miller (1881–87) has drawn our attention, has great importance for the explanation of the motif of the miraculous cup Watsamonga in the Nart epic. This cup raised itself to the lips of real heroes, telling of their campaigns, but remained motionless before braggarts and the boastful.</span></em></p><p><span>	</span><em><span>Here is what Herodotus tells us about the Scythians: &#39;Once a year each regional chief at the festival ordered a glass of wine mixed with water, and all the Scythians who had killed an enemy drank from this goblet. Only those who had not performed this service had not the right to touch it. They sat aside in a state of shame that was for them a great dishonor. As for those who killed a large number of foes, they drank from two goblets united together.&#39;</span></em></p><p><span>		</span><em><span>Aristotle also mentions this in his Politics: &#39;The Scythians at one of their festivals do not allow those who had not killed one single enemy to partake of the cup going round.&#39;</span></em></p><p><span>	</span><em><span>The closeness of the Tales of the Narts and the stories of Herodotus are striking. Both among the Narts and the Scythians the wine-cup served as an honorary reward for feats of battle, and to “distinguish real heroes.” In connection with this Dumézil notes the role that the goblet plays in Scythian mythology.9 Four things, all made of gold, which according to Scythian belief fell from heaven, were the plow, the yoke, the axe, and the goblet. It is also well-known what role holy wine and goblets played in Indo-Iranian cults.</span></em></p><p><span>	</span><em><span>One of the central episodes of the Batraz cycle is where Batraz takes blood-revenge for his father’s death. The classical motif of patriarchal-tribal custom, the blood-feud, occupied a leading place in the Nart epic not by chance alone. Speaking earlier about the specially lively aspects of this epic, we showed that one of the reasons for this fidelity to life must be seen in the way that the social conditions that gave birth to this epic continued to exist for a long time, and to further nourish it, thus saving it from ossification, degradation, and oblivion. The blood-feud motif entered the epic under the conditions of a patriarchal-tribal relationship and, judging by other elements of the Batraz cycle, at extremely distant times. But those patriarchal-tribal relations, including the blood-feud, continued to exist and flourish in Ossetian customs through many centuries. This is the reason why the story of how Batraz took revenge for the death of his father was, and remained, one of the favorite and most popular episodes of the epic. Here is the reason why a whole series of Nart heroes besides Batraz also appear as avengers of their father’s blood: Totraz, son of Albeg; Atsamazh,10 son of Atsa; Kaitar and Bitar, sons of Shoshlan. It is not by chance that the well-known folk epic, named &#39;Avkhardti Khasanah&#39; among Ossetians, also has blood-revenge as its theme.</span></em></p><p><span>	</span><em><span>The severe, persistent, and pitiless manner in which Batraz fulfills his filial duty as blood-avenger might appear repulsive to the modern reader, but one must take into account the fact that this epic was composed in very cruel times with very cruel and severe customs. Batraz’s actions are dictated not by mere caprice, but by the idea of duty. His revenge is the victory of justice, as it was understood in tribal conditions. It contains fewer arbitrary elements and less unjustifiable cruelty than, say, the revenge of Krumhilda in &#39;The Song of the Niebelungen.&#39; Moreover, in it are found individual features of knightly nobility and magnanimity. Thus, when Batraz brings the hewn-off arm of the slain Lord Shainag to Shatana as a war-trophy, she then suggests that he should return it to his relatives so that they may make an interment with due honors, which without the missing arm would be impossible according to their customs. Batraz does so without one word of protest.</span></em></p><p><span>	</span><em><span>Does not the cutting off of Lord Shainag’s right arm contain the echo of an ancient custom? Herodotus (book 4) cites: &#39;The Scythians bring to their war-god sacrifices not only of beasts, but of human beings. Human sacrifice is carried out in this way: from the number of prisoners they chose each hundredth one, and cut off his right shoulder including the arm. The hewn-off limb is then hurled in the air, and left to rest wherever it falls, the body being left in another place.&#39; This hacking off of the right arm appeared evidently among the Scythians, and among Ossetians, as a symbol of shameful dishonor for the enemy, depriving him of the right for honorable burial. The Ossetians’ near-neighbors from Georgia, the Khevsur mountain-tribe, had a custom of cutting off the right hand of the defeated enemy as a war-trophy. The number of hands hanging on the wall served as a measure of the prowess of the Khevsur warriors.</span></em></p><p><span>	</span><em><span>Numerous parallels between the Batraz cycle and Scythian-Alan realities, as well as ancient customs, give us the right to assert that this cycle is quite original, and extremely old. On the other hand, however, there can be but little doubt that the names ‘Khamis’ and ‘Batraz’ are Mongolian in character, and taken with other facts show that the Alan epic came under the influence of the Mongols (but see English-language editor’s note 5). There are doubts as to whether that influence was limited to personal names. Subjects and motifs may have also been borrowed. This question of Mongolian-Turkish elements in the Tales of the Narts deserves a good deal more work and attention.</span></em></p><p><span>	</span><em><span>The analysis of the themes and subjects of the Batraz cycle lead one to the conclusion that it was a long time in its formative period. Its most ancient elements derive from ancient history. It brings to us through the centuries the motifs of Scytho-Alan existence, and of Iranian mythology. The presence of Mongolian influence can only be dated to around the thirteenth to fourteenth centuries. Between these two extremes we see not only the development of the Batraz cycle but also of the Nart epic as a whole.&quot;</span></em><sup class='md-footnote'><a href='#dfref-footnote-7' name='ref-footnote-7'>7</a></sup></p></blockquote><p><span>Despite Abaev&#39;s assertion above of a Mongolian origin for the name </span><em><span>Batraz</span></em><span> (probably from </span><em><span>batyr</span></em><span> &lt; Türkic </span><em><span>baɣatur</span></em><span> &#39;hero&#39;(?), which may be of Indo-European provenance anyway, possibly from the Sanskrit adjective </span><em><span>mahā</span></em><span> &#39;great&#39;, affixed with either an aggentive suffix or the intensifying particle </span><em><span>-tara</span></em><sup class='md-footnote'><a href='#dfref-footnote-8' name='ref-footnote-8'>8</a></sup><span>), </span><em><span>Batraz</span></em><span> may also ultimately be of Caucasian origin, considering another likely etymology of His name. According to Colarusso:</span></p><blockquote><p><em><span>&quot;...one might see Circassian </span><span>*</span><span>/pat‛a-ra-ʒ/ &#39;damage, destroy-locative-army&#39; —&#39;One who was an army’s destruction,&#39; as Batraz is (note West Circassian / ɣe-p‛et‛e-/, “cause-be.worn.out, damaged” (ibid, p. 10), reshaped from earlier </span><span>*</span><span>/pat‛a/ through the influence of the preverb /p‛a-/, used with a sense of severing or breaking).&quot;</span></em><sup class='md-footnote'><a href='#dfref-footnote-9' name='ref-footnote-9'>9</a></sup><span> </span></p></blockquote><p><span>If this connection between the Scythian &quot;Ares&quot; and the Nartic </span><em><span>Batraz</span></em><span> can be accepted, our hypothetical </span><em><span>Akīnakāh</span></em><span> would also be assumed to have had cthonic qualities, which is noted by Darchiev:</span></p><blockquote><p><em><span>&quot;The Nart hero Batraz, who is considered the epic hypostasis of the god of war, also acts as the ruler of the afterlife.&quot;</span></em><sup class='md-footnote'><a href='#dfref-footnote-10' name='ref-footnote-10'>10</a></sup></p></blockquote><p><span>Many of these qualities of the hypothetical </span><em><span>Akīnakāh</span></em><span>, as derived from the Ossetic </span><em><span>Batraz</span></em><span>, can also be confirmed through comparison with, as Raevsky suggests, </span><em><span>Vərəθraγna</span></em><span>:</span></p><blockquote><p><span>	</span><em><span>&quot;[Vərəθraγna] is the great warrior god of Zoroastrianism, but his figure also contains a wealth of archaic, pre-Zoroastrian elements which clearly point to an Indo-Iranian era (P. Thieme, “The &quot;Aryan&quot; Gods of the Mitanni Treaties,” JAOS 80, 1960, pp. 312-14). His Avestan epithets are: amavant- “strong, endowed with attacking might,” ahuraδāta- “created by Ahura,” barō.xᵛarəna- “bearing xᵛarənah-,” hvāxšta- “possessing good peace,” hvāyaona- “possessing a good place,” aršō.kara- “conferring virility,” maršō.kara- “rendering decrepit,” frašō.kara- “making wonderful.” The epithets hvāxšta- and hvāyaona- associate him with Čistā (É.Benveniste and L. Renou, Vṛtra et Vṛθragna. Ētude de mythologie indo-iranienne, Paris, 1934, pp. 58ff.) while aršō.kara-, maršō.kara-, and frašō.kara- relate him to Zurwān (H. S. Nyberg, “Questions de cosmogonie et de cosmologie mazdéennes,” JA 219, 1931, pp. 86ff.).</span></em></p><p><span>	</span><em><span>In the Avesta, Vərəθraγna has all the characteristics of an ancient warrior god, the personification of a force that shatters and overcomes any resistance or defense, an irresistible offensive force which displays its strength in attack. For this reason he is associated with Vanaintī Uparatāt “Conquering Superiority” (Yt. 14.0, 64) and is venerated as yazatanąm zayō.tə̄mō “the most highly armed of the gods” (Yt. 14.1), amavastəmō “the most endowed with attacking might” (Yt. 14.3), xᵛarənaŋuhastəmō “the most endowed with xᵛarənah-” (Yt. 14.3). He is represented as being in constant battle against his enemies, men and demons (daēvas), wizards (yātus) and pairikās, kavis and karapans (Yt. 14.4, 62).</span></em></p><p><span>	</span><em><span>Bahrām yašt (Yt. 14), dedicated to Vərəθraγna, belongs to the most ancient sections of the Younger Avesta or, at least, contains many archaic elements (A. Christensen, Études sur le zoroastrisme de la Perse antique, Copenhagen, 1928, pp. 7-8; M. Boyce, Zoroastrianism I, p. 63). Bahrām yašt is not one of the better preserved yašts, yet it gives us a vivid and exhaustive picture of the divinity. It first enumerates the ten incarnations, in both animal and human form, of Vərəθraγna. These recall, although exact correspondences are lacking, the avatāras of Viṣṇu in Purāṇic literature, or the ten incarnations of Indra (J. Charpentier, Kleine Beiträge zur indoiranischen Mythologie, Uppsala, 1911, pp. 25-68): an impetuous wind (Yt. 14.2-5); a bull with horns of gold (v. 7); a white horse with ears and muzzle of gold (v. 9); a camel in heat (vv. 11-13); a boar (v. 15); a youth at the ideal age of fifteen (v. 17); a falcon or bird of prey, vārəγna- (vv. 19-21); a ram (v. 23); a wild goat (v. 25); and an armed warrior (v. 27). It is interesting to note that the Avesta also attributed some of these metamorphoses to Tištrya (Yt. 8.13, 16, 20): the youth of fifteen, the bull with the horns of gold and the white horse; to Xᵛarənah (Yt. 19.35): the bird vārəγna-, and to Vayu: the camel (Dēnkard, ed. Sanjana, IX, 23.2-3; Benveniste and Renou, pp. 35f.). The first metamorphosis, the impetuous wind, also links the god of victory to Vāta (Vayu), another divinity endowed with warlike virtues in Iranian mythology (H. S. Nyberg, Die Religionen des alten Iran, Leipzig, 1938, p. 75; S. Wikander, Vayu I, Lund, 1942; G. Widengren, Les religions de l’Iran, Paris, 1968, pp. 33ff.).</span></em></p><p><span>	</span><em><span>After the description of the incarnations of the god, the Bahrām yašt goes on to list the favors and gifts bestowed by Vərəθraγna on Zaraθuštra and on those who worship him according to the cult. These gifts are victory in thought, in word, and in action, as well as in declamatory speech and in retort, in conformity with a conception dating back to the Indo-Iranian practice of verbal contest (F. B. J. Kuiper, “The Ancient Aryan Verbal Contest,” IIJ 4,1960, pp. 243, 246). This evident Zoroastrianization of the cult of Vərəθraγna, which is reflected in Yt. 14.28-33, is coupled with a more popular image of the god, one in which he is more closely linked to magical elements and practices of exorcism which find parallels in India (B. Geiger, Die Aməša Spəntas. Ihr Wesen und ihre ursprüngliche Bedeutung, Vienna, 1916, pp. 66ff.; H. Lommel, Die Yäšt’s des Awesta, Göttingen, 1927, pp. 134-35; Benveniste and Renou, pp. 30-31). These were principally a matter of the so-called “magic of the feather,” i.e., oracles based on the falling or flying of a falcon’s feather, and so on (vv. 34-46). The rest of the yašt (vv. 47-64) is a hymn of praise to the god. The power of the god and the strength which this transmits to the Airyas are such as to confound all their enemies. On the other hand, the Vyāmburas (an unknown people), whom the Bahrām yašt describes as those who shed blood, burn prohibited wood, and make forbidden animal sacrifices (see Benveniste and Renou, pp. 37-38) follow other ritual practices in the cult of the god, which the faithful worshipers of Mazdā must stay away from (vv. 54-56).</span></em><span>..</span></p><p><span>	</span><em><span>...Our knowledge of Vərəθraγna indicates that the god’s functions were not limited to war and physical or military victory. He has other epithets and other characteristics which make him a more complex figure, one connected also with virility and sexual potency as well as health and physical integrity. He is defined as the one who gives man the “spring of the testicles,” ərəzōiš xå ( Yt. 14.29) and as the one who is baēšazyō.təmō, “the most gifted with healing” or healing powers (Yt. 14.3). In modern times, Bahrām is particularly worshipped as a divinity protecting those who undertake journeys (Boyce, Zoroastrianism I, p. 62 and n. 267). In fact, the Zoroastrian reform must have had a great influence on the evolution of this divine figure. This can also be inferred from the roles of Warahrān and Bahrām in later religious writings, from the Pahlavi texts of the ninth century to those of Parsism (see below). The principal evolution of Vərəθraγna in Zoroastrianism is without doubt to his role as the god of victory over the forces of evil in an intellectual and moral sense. The evolution of Vərəθraγna/Warahrān/Bahrām can not be understood outside the context of a radical revolution in traditional ethical and religious values. This has been pointed out by G. Dumézil, among others, (Heur et malheur du guerrier, Paris, 19852, pp. 179ff.).</span></em><span>&quot;</span><sup class='md-footnote'><a href='#dfref-footnote-11' name='ref-footnote-11'>11</a></sup></p></blockquote><p><span>One other possible mythological connection must also be addressed:</span></p><blockquote><p><em><span>&quot;...it is possible that the Scythian Ares was mighty Indra, who for Zoroastrians was the chief of the warlike, amoral Daevas, and a very fitting deity to receive worship from the freebooting Scythians.&quot;</span></em><sup class='md-footnote'><a href='#dfref-footnote-12' name='ref-footnote-12'>12</a></sup></p></blockquote><p><span>However, this connection may not necessarily be as straightforward as Boyce would have us believe, as Indra&#39;s role within Iranian mythology is not quite firm:</span></p><blockquote><p><em><span>&quot;Turning to the Iranian traditions, preserved chiefly in the Avesta, but also in the Pahlavi books and the Šāh-nāma, we find no trace of a myth involving Indra, or any other deity, with a snake named Wṛθra. In the context of its preoccupation with dynastic succession, the Iranian tradition presents two pairs of characters, Θrita (Ved. Trita), whose son Kərəsāspa slew the monstrous Horned Snake, and Āθβya (cf. Ved. Āptya), whose son Θraētaona (Pahl. Frēdōn, NPers. Feridun) slew the three-headed usurper, Aži Dahāka (MPers. Aždahāg, Šāh-nāma Ḏaḥḥāk; NPers aždahā “dragon”). The evidence shows that the oldest stratum of associated snake-slaying myths is represented by the complex involving Θrita / Āθβya / Θraētaona / Kərəsāspa on the Iranian side and Trita Āptya on the Indo-Aryan. Abundantly attested in the Avesta is the abstract noun wərəθra- n. “resistance, defense, obstruction” along with derivative compounds: wərəθraγna- n. “the smashing of resistance; victory,” masc. name of a god; wərəθrajan- (Ved. vṛtrahán-) adj. “smashing of resistance; victorious;” wərəθra.taurwan-, °wan(t)- adj. “defeating resistance.” This leaves the myth of Indra and Vṛtra as a Vedic innovation created out of the older myths and concepts. Further, Vedic Indra shares martial attributes with two closely related Iranian deities. One is Wərəθraγna who is the embodiment of the concept acted out in Vedic Indra’s mythic struggle with Vṛtra, and, who shares with Vedic Indra the ability of change form. The other is Miθra. The descriptions of his violent enforcement of covenants, especially with his bronze mace (wazra-), closely resemble those of Indra in the Ṛgveda, while in the Veda Mitra is remarkably devoid of martial qualities. In the attempt to reconstruct Indra’s history within the two Indo-Iranian branches one might suppose that he was demonized in Iran because, after Zaraθuštra’s reform, the violent traits of his character were deemed offensive, being worthy only of a daēwa. However, that hardly explains why those very traits would have been simply parceled out to other “ahuric” deities. Alternatively, and more probably, one could imagine Indra as a relatively minor deity who, in his ascent among the Indo-Aryans, gradually appropriated traits from other deities at their expense. Impossible to substantiate is the notion that Iranians, in cultural conflict with Indo-Aryans, demonized their chief god. Wherever the truth in these matters lies, one should bear in mind that the universe of mythic imagination is not usually laid out in clear, straight lines. One further tangle in the web of associations is Iranian Indra’s close connection to two other demonized gods, Saurwa = Ved. Śarva and Nåŋhaiθya = the dual Nāsatyā. In the Vedic literature, Śarva is a somewhat sinister figure in the sphere of Rudra, while the Nāsatyā (identified with the Ašvinā) are benevolent and among the most frequently invoked deities.&quot;</span></em><sup class='md-footnote'><a href='#dfref-footnote-13' name='ref-footnote-13'>13</a></sup></p></blockquote><p><span>From these associations, a relatively clear picture of </span><em><span>Akīnakāh</span></em><span> comes into focus. His figure is one of duality and contradiction. He is both &#39;the most gifted with healing&#39; and the means of bodily harm. He is both the patron of male virility, a giver of life, and lord of the afterlife, a bringer of death. He is birth and death. The Beginning and the End. This mythological narrative is simply begging to be ritually reenacted yearly in the ritual cycle of a revived Scythian religious practice. The annual erection of the wooden altar into which the sacred </span><em><span>akīnakah</span></em><span> is driven, the festival for which must have occured in the Spring, judging from Herodotus&#39; comment that it must be partially rebuilt every year &quot;for the storms of winter always make it sink down&quot;, represents </span><em><span>Akīnakāh</span></em><span>&#39;s birth and tempering as reflected in the myth of </span><em><span>Batraz</span></em><span> being tempered in the coals and is associated with rites of fertility. To echo the original rite, ungulate-shaped bread should be offered and the right arm should be severed from a straw dummy and cast into the air. Sacred wine may also be offered, and wine may be traditionally consumed. In the Winter, </span><em><span>Akīnakāh</span></em><span>&#39;s death may be symbolically represented by ritually destroying a (preferably biodegradable alternative to a) sword, and then casting it into a body of water, reflected by the myth of </span><em><span>Batraz</span></em><span>&#39; sword being cast into the Black Sea, marking </span><em><span>Akīnakāh</span></em><span>&#39;s transition to ruler of the afterlife.  </span></p><p>&nbsp;</p><p><strong><span>Bibliography</span></strong></p><hr /><p><strong><span>1</span></strong><span> Boyce, M. (E.J. Brill, 1982)</span></p><p><strong><span>2</span></strong><span> Gnoli, G. </span><em><span>et al.</span></em><span> </span><em><span>Encyclopedia Iranica</span></em><span> III/5, 510–514 (1988)</span></p><p><strong><span>3</span></strong><span> Atwood, C. P. </span><em><span>Central Asiatic Journal</span></em><span> 56, 49–86 (2013)</span></p><p><strong><span>4</span></strong><span> CH’Ü-HSÜN, K. </span><em><span>Central Asiatic Journal</span></em><span> 5, 221–232 (1959)</span></p><p><strong><span>5</span></strong><span> Colarusso, J. </span><em><span>et al.</span></em><span> (Princeton University Press, 2016)</span></p><p><strong><span>6</span></strong><span> Chelakhsaev, Р. Р. </span><em><span>Bulletin of the Vladikavkaz Scientific Center of the Russian Academy of Sciences</span></em><span> (2019)</span></p><p><strong><span>7</span></strong><span> DARCHIEV, A. V. </span><em><span>et al.</span></em><span> </span><em><span>Izvestiya SOIGSI</span></em><span> (2018)</span></p><p><strong><span>8</span></strong><span> Kullanda, S. V. (Dmitry Pozharsky University, 2016)</span></p><p><strong><span>9</span></strong><span> Mikulka, T. (Univerzita Karlova, 2010)</span></p><p><strong><span>10</span></strong><span> Raevskij, D. S. (Secor Publishers, 1994)</span></p><p>&nbsp;</p><p><strong><span>Notes</span></strong></p><div class='footnotes-area'  ><hr/>
+<div class='footnote-line'><span class='md-fn-count'>1</span> <span>Herodotus, </span><em><span>The Histories</span></em><span>. IV, 59-62.</span> <a name='dfref-footnote-1' href='#ref-footnote-1' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>2</span> <span>Ch&#39;ü-Hsün 1959.</span> <a name='dfref-footnote-2' href='#ref-footnote-2' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>3</span> <span>Mikula 2010, p. 21.</span> <a name='dfref-footnote-3' href='#ref-footnote-3' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>4</span> <span>Kullanda 2016, pp. 44-45.</span> <a name='dfref-footnote-4' href='#ref-footnote-4' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>5</span> <span>Darchiev 2017.</span> <a name='dfref-footnote-5' href='#ref-footnote-5' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>6</span> <span>Raevskiĭ 1993, pp. 20-21. </span> <a name='dfref-footnote-6' href='#ref-footnote-6' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>7</span> <span>Colarusso 2016, pp. XLII-XLV.</span> <a name='dfref-footnote-7' href='#ref-footnote-7' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>8</span> <span>Atwood 2013, pp. 61-68.</span> <a name='dfref-footnote-8' href='#ref-footnote-8' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>9</span> <span>Colarusso 2016., note 6. </span> <a name='dfref-footnote-9' href='#ref-footnote-9' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>10</span> <span>Darchiev 2017 p. 5 </span> <a name='dfref-footnote-10' href='#ref-footnote-10' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>11</span> <span>Gnoli 1988. </span> <a name='dfref-footnote-11' href='#ref-footnote-11' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>12</span> <span>Boyce 1982 p. 41.</span> <a name='dfref-footnote-12' href='#ref-footnote-12' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>13</span> <span>Malandra 2004.</span> <a name='dfref-footnote-13' href='#ref-footnote-13' title='back to document' class='reversefootnote' >↩</a></div></div></div>
+</body>
+</html>

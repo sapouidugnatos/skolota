@@ -2,7 +2,7 @@
 
 #### *by Kanaxšayąs*
 
-![](https://cdn.discordapp.com/attachments/555218305099759637/716718812975857805/axis-mundi-cosmic.png)
+![](/home/chrx/Documents/art/akinakah-small.png)
 
 Very little knowledge of the religious beliefs and practices of the Scythian peoples has come down to us, and that which has is often (probably unintentionally) distorted or obfuscated by the authors that recorded evidence of these beliefs and practices, most notably Herodotus. Of particular note is the only instance of Scythian ritual behavior that Herodotus records. Herodotus tells us: 
 
@@ -20,7 +20,7 @@ Evidence for a Caucasian origin of this sword cult may potentially also be found
 >
 > *On the other hand, the quadrangular shape of the sacrificial altar of this Scythian deity, taken by itself, is directly related to the quadrilateral structure of space characterized above, whereas the sword thrust into the centre of this sacrificial altar was one of the incarnations of the world's axis which models the vertical structure of the Universe and links its three zones. In this way, the altar of the 'Scythian Ares' is simply a model of the Universe, moreover predominantly of its middle zone - the air space. Apparently, the way in which sacrifices were offered to that deity - by throwing severed arms high into the air - was also connected with that function of the god.*
 >
-> *The 'successor' of the Scythian god - the Ossetic Batraz - also inhabited the air space and often acquired the image of the devastating whirlwind. And finally, we shall adduce here the evidence of the Greek author Lukianos, who was well familiar with the realia of Scythian culture and probably had first-hand knowl- edge of many motifs of Scythian folklore. In one of his works devoted to Scythian themes (Toxaris, 38) he reports that the Scythians worshipped the Wind and the Sword as gods. Indeed, these images seem to be opposed: the first one is a source of life, while the second one brings death. However, the very fact of their juxtaposing was hardly accidental. It suggests rather that this passage reflects a certain ambivalence of the unified Scythian image. What is more, researchers have drawn attention to the fact that the actual shaping of the tip and of the hilt of the ancient sword definitely resembles a phallus. Thus, this lethal weapon simultaneously acquires the form of a life-giving organ, which is an illustration of the discussed ambivalence."*[^6] 
+> *The 'successor' of the Scythian god - the Ossetic Batraz - also inhabited the air space and often acquired the image of the devastating whirlwind. And finally, we shall adduce here the evidence of the Greek author Lukianos, who was well familiar with the realia of Scythian culture and probably had first-hand knowledge of many motifs of Scythian folklore. In one of his works devoted to Scythian themes (Toxaris, 38) he reports that the Scythians worshipped the Wind and the Sword as gods. Indeed, these images seem to be opposed: the first one is a source of life, while the second one brings death. However, the very fact of their juxtaposing was hardly accidental. It suggests rather that this passage reflects a certain ambivalence of the unified Scythian image. What is more, researchers have drawn attention to the fact that the actual shaping of the tip and of the hilt of the ancient sword definitely resembles a phallus. Thus, this lethal weapon simultaneously acquires the form of a life-giving organ, which is an illustration of the discussed ambivalence."*[^6] 
 
 This connection is elaborated in even further detail by Abaev:
 
@@ -32,7 +32,7 @@ This connection is elaborated in even further detail by Abaev:
 >
 > ​	*Here is what Herodotus tells us about the Scythians: 'Once a year each regional chief at the festival ordered a glass of wine mixed with water, and all the Scythians who had killed an enemy drank from this goblet. Only those who had not performed this service had not the right to touch it. They sat aside in a state of shame that was for them a great dishonor. As for those who killed a large number of foes, they drank from two goblets united together.'*
 >
-> ​		Aristotle also mentions this in his Politics: 'The Scythians at one of their festivals do not allow those who had not killed one single enemy to partake of the cup going round.'
+> ​		*Aristotle also mentions this in his Politics: 'The Scythians at one of their festivals do not allow those who had not killed one single enemy to partake of the cup going round.'*
 >
 > ​	*The closeness of the Tales of the Narts and the stories of Herodotus are striking. Both among the Narts and the Scythians the wine-cup served as an honorary reward for feats of battle, and to “distinguish real heroes.” In connection with this Dumézil notes the role that the goblet plays in Scythian mythology.9 Four things, all made of gold, which according to Scythian belief fell from heaven, were the plow, the yoke, the axe, and the goblet. It is also well-known what role holy wine and goblets played in Indo-Iranian cults.*
 >
@@ -46,17 +46,17 @@ This connection is elaborated in even further detail by Abaev:
 >
 > ​	*The analysis of the themes and subjects of the Batraz cycle lead one to the conclusion that it was a long time in its formative period. Its most ancient elements derive from ancient history. It brings to us through the centuries the motifs of Scytho-Alan existence, and of Iranian mythology. The presence of Mongolian influence can only be dated to around the thirteenth to fourteenth centuries. Between these two extremes we see not only the development of the Batraz cycle but also of the Nart epic as a whole."*[^7]
 
-*Batraz* may also ultimately be of Caucasian origin, considering the likely etymology of His name. According to Colarusso:
+Despite Abaev's assertion above of a Mongolian origin for the name *Batraz* (probably from *batyr* < Türkic *baɣatur* 'hero'(?), which may be of Indo-European provenance anyway, possibly from the Sanskrit adjective *mahā* 'great', affixed with either an aggentive suffix or the intensifying particle *-tara*[^8]), *Batraz* may also ultimately be of Caucasian origin, considering another likely etymology of His name. According to Colarusso:
 
-> *"...one might see Circassian \*/pat‛a-ra-ʒ/ 'damage, destroy-locative-army' —'One who was an army’s destruction,' as Batraz is (note West Circassian / ɣe-p‛et‛e-/, “cause-be.worn.out, damaged” (ibid, p. 10), reshaped from earlier \*/pat‛a/ through the influence of the preverb /p‛a-/, used with a sense of severing or breaking)."*[^8] 
+> *"...one might see Circassian \*/pat‛a-ra-ʒ/ 'damage, destroy-locative-army' —'One who was an army’s destruction,' as Batraz is (note West Circassian / ɣe-p‛et‛e-/, “cause-be.worn.out, damaged” (ibid, p. 10), reshaped from earlier \*/pat‛a/ through the influence of the preverb /p‛a-/, used with a sense of severing or breaking)."*[^9] 
 
 If this connection between the Scythian "Ares" and the Nartic *Batraz* can be accepted, our hypothetical *Akīnakāh* would also be assumed to have had cthonic qualities, which is noted by Darchiev:
 
-> *"The Nart hero Batraz, who is considered the epic hypostasis of the god of war, also acts as the ruler of the afterlife."*[^9]
+> *"The Nart hero Batraz, who is considered the epic hypostasis of the god of war, also acts as the ruler of the afterlife."*[^10]
 
 Many of these qualities of the hypothetical *Akīnakāh*, as derived from the Ossetic *Batraz*, can also be confirmed through comparison with, as Raevsky suggests, *Vərəθraγna*:
 
-> ​	*"Bahrām is the great warrior god of Zoroastrianism, but his figure also contains a wealth of archaic, pre-Zoroastrian elements which clearly point to an Indo-Iranian era (P. Thieme, “The "Aryan" Gods of the Mitanni Treaties,” JAOS 80, 1960, pp. 312-14). His Avestan epithets are: amavant- “strong, endowed with attacking might,” ahuraδāta- “created by Ahura,” barō.xᵛarəna- “bearing xᵛarənah-,” hvāxšta- “possessing good peace,” hvāyaona- “possessing a good place,” aršō.kara- “conferring virility,” maršō.kara- “rendering decrepit,” frašō.kara- “making wonderful.” The epithets hvāxšta- and hvāyaona- associate him with Čistā (É.Benveniste and L. Renou, Vṛtra et Vṛθragna. Ētude de mythologie indo-iranienne, Paris, 1934, pp. 58ff.) while aršō.kara-, maršō.kara-, and frašō.kara- relate him to Zurwān (H. S. Nyberg, “Questions de cosmogonie et de cosmologie mazdéennes,” JA 219, 1931, pp. 86ff.).*
+> ​	*"[Vərəθraγna] is the great warrior god of Zoroastrianism, but his figure also contains a wealth of archaic, pre-Zoroastrian elements which clearly point to an Indo-Iranian era (P. Thieme, “The "Aryan" Gods of the Mitanni Treaties,” JAOS 80, 1960, pp. 312-14). His Avestan epithets are: amavant- “strong, endowed with attacking might,” ahuraδāta- “created by Ahura,” barō.xᵛarəna- “bearing xᵛarənah-,” hvāxšta- “possessing good peace,” hvāyaona- “possessing a good place,” aršō.kara- “conferring virility,” maršō.kara- “rendering decrepit,” frašō.kara- “making wonderful.” The epithets hvāxšta- and hvāyaona- associate him with Čistā (É.Benveniste and L. Renou, Vṛtra et Vṛθragna. Ētude de mythologie indo-iranienne, Paris, 1934, pp. 58ff.) while aršō.kara-, maršō.kara-, and frašō.kara- relate him to Zurwān (H. S. Nyberg, “Questions de cosmogonie et de cosmologie mazdéennes,” JA 219, 1931, pp. 86ff.).*
 >
 > ​	*In the Avesta, Vərəθraγna has all the characteristics of an ancient warrior god, the personification of a force that shatters and overcomes any resistance or defense, an irresistible offensive force which displays its strength in attack. For this reason he is associated with Vanaintī Uparatāt “Conquering Superiority” (Yt. 14.0, 64) and is venerated as yazatanąm zayō.tə̄mō “the most highly armed of the gods” (Yt. 14.1), amavastəmō “the most endowed with attacking might” (Yt. 14.3), xᵛarənaŋuhastəmō “the most endowed with xᵛarənah-” (Yt. 14.3). He is represented as being in constant battle against his enemies, men and demons (daēvas), wizards (yātus) and pairikās, kavis and karapans (Yt. 14.4, 62).*
 >
@@ -64,35 +64,58 @@ Many of these qualities of the hypothetical *Akīnakāh*, as derived from the 
 >
 > ​	*After the description of the incarnations of the god, the Bahrām yašt goes on to list the favors and gifts bestowed by Vərəθraγna on Zaraθuštra and on those who worship him according to the cult. These gifts are victory in thought, in word, and in action, as well as in declamatory speech and in retort, in conformity with a conception dating back to the Indo-Iranian practice of verbal contest (F. B. J. Kuiper, “The Ancient Aryan Verbal Contest,” IIJ 4,1960, pp. 243, 246). This evident Zoroastrianization of the cult of Vərəθraγna, which is reflected in Yt. 14.28-33, is coupled with a more popular image of the god, one in which he is more closely linked to magical elements and practices of exorcism which find parallels in India (B. Geiger, Die Aməša Spəntas. Ihr Wesen und ihre ursprüngliche Bedeutung, Vienna, 1916, pp. 66ff.; H. Lommel, Die Yäšt’s des Awesta, Göttingen, 1927, pp. 134-35; Benveniste and Renou, pp. 30-31). These were principally a matter of the so-called “magic of the feather,” i.e., oracles based on the falling or flying of a falcon’s feather, and so on (vv. 34-46). The rest of the yašt (vv. 47-64) is a hymn of praise to the god. The power of the god and the strength which this transmits to the Airyas are such as to confound all their enemies. On the other hand, the Vyāmburas (an unknown people), whom the Bahrām yašt describes as those who shed blood, burn prohibited wood, and make forbidden animal sacrifices (see Benveniste and Renou, pp. 37-38) follow other ritual practices in the cult of the god, which the faithful worshipers of Mazdā must stay away from (vv. 54-56).*..
 >
-> ​	*...Our knowledge of Vərəθraγna indicates that the god’s functions were not limited to war and physical or military victory. He has other epithets and other characteristics which make him a more complex figure, one connected also with virility and sexual potency as well as health and physical integrity. He is defined as the one who gives man the “spring of the testicles,” ərəzōiš xå ( Yt. 14.29) and as the one who is baēšazyō.təmō, “the most gifted with healing” or healing powers (Yt. 14.3). In modern times, Bahrām is particularly worshipped as a divinity protecting those who undertake journeys (Boyce, Zoroastrianism I, p. 62 and n. 267). In fact, the Zoroastrian reform must have had a great influence on the evolution of this divine figure. This can also be inferred from the roles of Warahrān and Bahrām in later religious writings, from the Pahlavi texts of the ninth century to those of Parsism (see below). The principal evolution of Vərəθraγna in Zoroastrianism is without doubt to his role as the god of victory over the forces of evil in an intellectual and moral sense. The evolution of Vərəθraγna/Warahrān/Bahrām can not be understood outside the context of a radical revolution in traditional ethical and religious values. This has been pointed out by G. Dumézil, among others, (Heur et malheur du guerrier, Paris, 19852, pp. 179ff.).*"[^10]
+> ​	*...Our knowledge of Vərəθraγna indicates that the god’s functions were not limited to war and physical or military victory. He has other epithets and other characteristics which make him a more complex figure, one connected also with virility and sexual potency as well as health and physical integrity. He is defined as the one who gives man the “spring of the testicles,” ərəzōiš xå ( Yt. 14.29) and as the one who is baēšazyō.təmō, “the most gifted with healing” or healing powers (Yt. 14.3). In modern times, Bahrām is particularly worshipped as a divinity protecting those who undertake journeys (Boyce, Zoroastrianism I, p. 62 and n. 267). In fact, the Zoroastrian reform must have had a great influence on the evolution of this divine figure. This can also be inferred from the roles of Warahrān and Bahrām in later religious writings, from the Pahlavi texts of the ninth century to those of Parsism (see below). The principal evolution of Vərəθraγna in Zoroastrianism is without doubt to his role as the god of victory over the forces of evil in an intellectual and moral sense. The evolution of Vərəθraγna/Warahrān/Bahrām can not be understood outside the context of a radical revolution in traditional ethical and religious values. This has been pointed out by G. Dumézil, among others, (Heur et malheur du guerrier, Paris, 19852, pp. 179ff.).*"[^11]
+
+One other possible mythological connection must also be addressed:
+
+> *"...it is possible that the Scythian Ares was mighty Indra, who for Zoroastrians was the chief of the warlike, amoral Daevas, and a very fitting deity to receive worship from the freebooting Scythians."*[^12]
+
+However, this connection may not necessarily be as straightforward as Boyce would have us believe, as Indra's role within Iranian mythology is not quite firm:
+
+> *"Turning to the Iranian traditions, preserved chiefly in the Avesta, but also in the Pahlavi books and the Šāh-nāma, we find no trace of a myth involving Indra, or any other deity, with a snake named Wṛθra. In the context of its preoccupation with dynastic succession, the Iranian tradition presents two pairs of characters, Θrita (Ved. Trita), whose son Kərəsāspa slew the monstrous Horned Snake, and Āθβya (cf. Ved. Āptya), whose son Θraētaona (Pahl. Frēdōn, NPers. Feridun) slew the three-headed usurper, Aži Dahāka (MPers. Aždahāg, Šāh-nāma Ḏaḥḥāk; NPers aždahā “dragon”). The evidence shows that the oldest stratum of associated snake-slaying myths is represented by the complex involving Θrita / Āθβya / Θraētaona / Kərəsāspa on the Iranian side and Trita Āptya on the Indo-Aryan. Abundantly attested in the Avesta is the abstract noun wərəθra- n. “resistance, defense, obstruction” along with derivative compounds: wərəθraγna- n. “the smashing of resistance; victory,” masc. name of a god; wərəθrajan- (Ved. vṛtrahán-) adj. “smashing of resistance; victorious;” wərəθra.taurwan-, °wan(t)- adj. “defeating resistance.” This leaves the myth of Indra and Vṛtra as a Vedic innovation created out of the older myths and concepts. Further, Vedic Indra shares martial attributes with two closely related Iranian deities. One is Wərəθraγna who is the embodiment of the concept acted out in Vedic Indra’s mythic struggle with Vṛtra, and, who shares with Vedic Indra the ability of change form. The other is Miθra. The descriptions of his violent enforcement of covenants, especially with his bronze mace (wazra-), closely resemble those of Indra in the Ṛgveda, while in the Veda Mitra is remarkably devoid of martial qualities. In the attempt to reconstruct Indra’s history within the two Indo-Iranian branches one might suppose that he was demonized in Iran because, after Zaraθuštra’s reform, the violent traits of his character were deemed offensive, being worthy only of a daēwa. However, that hardly explains why those very traits would have been simply parceled out to other “ahuric” deities. Alternatively, and more probably, one could imagine Indra as a relatively minor deity who, in his ascent among the Indo-Aryans, gradually appropriated traits from other deities at their expense. Impossible to substantiate is the notion that Iranians, in cultural conflict with Indo-Aryans, demonized their chief god. Wherever the truth in these matters lies, one should bear in mind that the universe of mythic imagination is not usually laid out in clear, straight lines. One further tangle in the web of associations is Iranian Indra’s close connection to two other demonized gods, Saurwa = Ved. Śarva and Nåŋhaiθya = the dual Nāsatyā. In the Vedic literature, Śarva is a somewhat sinister figure in the sphere of Rudra, while the Nāsatyā (identified with the Ašvinā) are benevolent and among the most frequently invoked deities."*[^13]
+
+From these associations, a relatively clear picture of *Akīnakāh* comes into focus. His figure is one of duality and contradiction. He is both 'the most gifted with healing' and the means of bodily harm. He is both the patron of male virility, a giver of life, and lord of the afterlife, a bringer of death. He is birth and death. The Beginning and the End. This mythological narrative is simply begging to be ritually reenacted yearly in the ritual cycle of a revived Scythian religious practice. The annual erection of the wooden altar into which the sacred *akīnakah* is driven, the festival for which must have occured in the Spring, judging from Herodotus' comment that it must be partially rebuilt every year "for the storms of winter always make it sink down", represents *Akīnakāh*'s birth and tempering as reflected in the myth of *Batraz* being tempered in the coals and is associated with rites of fertility. To echo the original rite, ungulate-shaped bread should be offered and the right arm should be severed from a straw dummy and cast into the air. Sacred wine may also be offered, and wine may be traditionally consumed. In the Winter, *Akīnakāh*'s death may be symbolically represented by ritually destroying a (preferably biodegradable alternative to a) sword, and then casting it into a body of water, reflected by the myth of *Batraz*' sword being cast into the Black Sea, marking *Akīnakāh*'s transition to ruler of the afterlife.  
+
+
 
 **Bibliography**
 
-Chelakhsaev, Ruslan Romanovich. "To the question of the etymology of the name of the Nart Batraz" Vestnik of the Vladikavkaz Scientific Center, vol. 19, no. 2, 2019, pp. 51-55.
+---
 
-Ch'ü-Hsün, Kao. “THE CHING LU SHEN SHRINES OF HAN SWORD WORSHIP IN HSIUNG NU RELIGION.” *Central Asiatic Journal*, vol. 5, no. 3, 1959, pp. 221–232. *JSTOR*, www.jstor.org/stable/41917638. Accessed 27 Nov. 2020.
+**1** Boyce, M. (E.J. Brill, 1982)
 
-Darchiev, Anzor Valerievich. "On the military cult of the Alans" Izvestia SOIGSI, no. 24 (63), 2017, pp. 5-17.
+**2** Gnoli, G. *et al.* *Encyclopedia Iranica* III/5, 510–514 (1988)
 
-Gnoli, G. (1988) and  P. Jamzadeh, “BAHRĀM (Vərəθraγna),” *Encyclopaedia Iranica*, III/5, pp. 510-514, available online at http://www.iranicaonline.org/articles/bahram-1 (accessed on 30 December 2012).
+**3** Atwood, C. P. *Central Asiatic Journal* 56, 49–86 (2013)
 
-Kullanda, S. V. *Scythians: language and ethnogenesis* . Russian Foundation for the Promotion of Education and Science Moscow, 2016.
+**4** CH’Ü-HSÜN, K. *Central Asiatic Journal* 5, 221–232 (1959)
 
-May, Walter. *Tales of the Narts: Ancient Myths and Legends of the Ossetians*. Edited by JOHN COLARUSSO and TAMIRLAN SALBIEV, Princeton University Press, 2016. *JSTOR*, www.jstor.org/stable/j.ctt1q1xrf3. Accessed 27 Nov. 2020.
+**5** Colarusso, J. *et al.* (Princeton University Press, 2016)
 
-Mikula, Tomáš. *Slovo o svatém Dimitriji Soluňském mezi nejstaršími legendami Germanova sborníku*. 2010. Diplomová práce. Univerzita Karlova, Filozofická fakulta, Ústav slavistických a východoevropských studií. Vedoucí práce Čermák, Václav.
+**6** Chelakhsaev, Р. Р. *Bulletin of the Vladikavkaz Scientific Center of the Russian Academy of Sciences* (2019)
 
-Raevskiĭ, D. S., and Ivan Marazov. *Scythian mythology*. Sofia: Secor Publishers, 1993. Print.
+**7** DARCHIEV, A. V. *et al.* *Izvestiya SOIGSI* (2018)
+
+**8** Kullanda, S. V. (Dmitry Pozharsky University, 2016)
+
+**9** Mikulka, T. (Univerzita Karlova, 2010)
+
+**10** Raevskij, D. S. (Secor Publishers, 1994)
+
+
 
 **Notes**
 
-[^1]:  Hdt. IV, 59-62.
+[^1]:  Herodotus, *The Histories*. IV, 59-62.
 [^2]: Ch'ü-Hsün 1959.
 [^3]: Mikula 2010, p. 21.
 [^4]: Kullanda 2016, pp. 44-45.
 [^5]:Darchiev 2017.
 [^6]:Raevskiĭ 1993, pp. 20-21. 
-[^7]: May 2016, pp. XLII-XLV.
-[^8]: Ibid., note 6. 
-[^9]: Darchiev 2017 p. 5 
-[^10]: Gnoli 1988. 
+[^7]: Colarusso 2016, pp. XLII-XLV.
+[^8]: Atwood 2013, pp. 61-68.
+[^9]: Colarusso 2016., note 6. 
+[^10]: Darchiev 2017 p. 5 
+[^11]: Gnoli 1988. 
+[^12]: Boyce 1982 p. 41.
+[^13]: Malandra 2004.
