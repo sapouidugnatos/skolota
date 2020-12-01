@@ -2,7 +2,7 @@
 
 #### *by Kanaxšayąs*
 
-![](https://github.com/sapouidugnatos/skolota/raw/master/akinakah/akinakah-cosmic.png)
+![](https://github.com/sapouidugnatos/skolota/raw/master/akinakah/akinak-cosmic.png)
 
 Very little knowledge of the religious beliefs and practices of the Scythian peoples has come down to us, and that which has is often (probably unintentionally) distorted or obfuscated by the authors that recorded evidence of these beliefs and practices, most notably Herodotus. Of particular note is the only instance of Scythian ritual behavior that Herodotus records. Herodotus tells us: 
 
