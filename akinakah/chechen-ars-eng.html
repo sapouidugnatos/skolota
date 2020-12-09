@@ -1,0 +1,548 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>chechen-ars-eng</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+
+</style>
+</head>
+<body class='typora-export'>
+<div id='write'  class=''><p><span>On the origin of the sword cult among the Scythians</span></p><p><span>I. M. Bulatbiev</span></p><p><span>The ancient pagan beliefs and mythology of the Chechens, unfortunately, have not been properly studied. Meanwhile, there is reason to believe that a comprehensive study of this topic can shed light on some controversial issues in the ancient history of the North Caucasus, in particular on the issue of the ethnic composition of the tribes of the North Caucasian Alans.</span></p><p><span>The correspondences revealed by us in the field of religious ideology indicate a certain pattern of relationships between the Iranian-speaking tribes from the Scythian environment and the Nakhs. In this aspect, of interest is our comparative analysis of the Scythian-Alanian deity of war and the sword cult of the Chechens, which confidently allows us to speak about their identity. Thus, the fact of veneration of the same cult, both among the Nakhs and among the tribes under the definition of Scythian-Sarmatian-Alans, definitely indicates in favor of the need to correct some of the conclusions established in historiography.</span></p><p><span>Today it is hardly possible to count on the restoration of the full composition of the Scythian-Alanian pantheon, as well as a complete picture of the ancient pagan beliefs of the Chechens. With the adoption of Islam, the pagan cults of the Chechens became a thing of the past, and a significant part of information about them was lost. Based on the surviving details, we can only speak of the restoration of some of its episodes. And one of such episodes is the cult of the sword, which has existed among the Chechens since ancient times. It seems to us that the linguistic material about him revealed by us can contribute to solving the problem of determining the genesis of the Scythian Ares.</span></p><p><span>Very little is known about the Sarmatian religion. It is possible that the Sarmatian religious outlook (at least some of them), was identical to the Scythian, as there are references </span><span>[^ 1]</span><span> of the veneration in Sarmatian sword worship is knitting a little pre-eminent place in the Scythian cult ceremonies. Ancient sources testify to the presence of Scythian deities in the beliefs of the Alans. There is evidence of the worship of the sword cult by the Alans. Traces of the Scythian &quot;heptigods&quot; </span><span>[^ 2]</span><span> are also found among the Alans. According to the information of the anonymous Periplus of Pontus Euxin (V century), it is known that the city of Feodosia in the Crimea in the local &quot;Alan-Tavrid&quot; language was called Ardavda, which translated into Greek meant επταθεος - &quot;seven gods&quot; </span><span>[^ 3]</span><span>... But the data on the names of the &quot;seven-god&quot; pantheon of Alans are not found in ancient sources.</span></p><p><span>Historical information about the religion of the Alans has come down to us only fragmentarily. However, traces of Alan cults, known from the data of ancient authors, are found even today in the ethnography, language and culture of the Chechens. Some of them (the cult of the sun, the cult of the sword, the seven-god cult) find explanations and correspondences when compared with the available materials of language, ethnography, as well as with data on the pre-Islamic religious beliefs of the Chechens, and give a result that differs from the version of official historiography.</span></p><p><span>Describing the composition of the Scythian pantheon, Herodotus lists the names of five deities: Tabiti, Papai, Api, Goytosir, Argimpas - and mentions two deities without naming them. All these deities Herodotus identified with the gods from ancient Greek mythology - Hestia, Zeus and Gaia, Apollo, Aphrodite, Urania, Hercules and Ares (Hdt. IV, 59). Herodotus interprets the Scythian pantheon by comparing the functions of the Scythian deities with the functions of characters in Greek mythology </span><span>[^ 4]</span><span> , and the absence of other sources with more detailed information about the Scythian religion forces historians to appeal mainly to the information of Herodotus.</span></p><p><span>Of the Scythian deities listed by Herodotus, in five cases (except for Hercules and Ares), their Scythian names are given. It should be noted that studies of the Scythian-Alanian problem, according to the tradition in historical science, are generally accepted to be carried out exclusively from the standpoint of Iranian studies, since the right to touch on this topic, one might say, is monopolized by the apologists of the theory of the Iranian origin of the Scythians. And as far as we know, no one has yet carried out the classification and comparative analysis of the pre-Islamic beliefs of the Chechens with the Scythian-Alan cults.</span></p><p><span>The famous Iranian scholar V. I. Abaev attempted to compare the pagan beliefs of the Ossetians with the Scythian-Alanian deities. In particular, Abaev identified the Alan cult of the sword with the Christian &quot;Saint George&quot; of the Ossetians </span><span>[^ 5]</span><span> , being completely unaware of the pre-Christian name &quot;George&quot;, which in no way allows us to consider his identification justified. The French mythologist Georges Dumézil saw the features of the Scythian-Alan god of war in the person of Batraz from the Ossetian Nart epic </span><span>[^ 6]</span><span> . It should be noted that all Iranians, without exception, prefer to pass over in silence the fact that there are absolutely no data in the ancient literature, not a single hint of the Narts and the Nart epic. And this despite the fact that ancient authors are well acquainted with the Scythian environment.</span></p><p><span>As already mentioned, Herodotus identifies the Scythian deities with the anthropomorphic deities of the Greeks, except for the god of war, who is represented in the form of a sword. Ares (Areus) in Greek mythology is the son of Zeus and the god of insidious, treacherous war, which corresponds to the Roman Mars. It is surprising that the most ancient pagan sword cult of the Chechens has remained without any attention until now, despite the fact that its influence is still reflected in the language and culture of the Chechens. This is just the case when a unique material is very close, &quot;under the nose&quot;, where his name is shouted out in dance exclamations, while the eyes of researchers are directed into the distance. But before calling his name, let&#39;s turn to the sources.</span></p><p><span>As you know, among other Scythian cults, Herodotus singles out the cult of the sword, to which they erected altars, and the sacrifice to him was distinguished by special splendor and cruelty: “In each Scythian region, such shrines for Ares were erected in the districts: mountains of brushwood piled one on top of the other ... An ancient iron sword is hoisted on each such hill. This is the idol of Ares. Horses and cattle are sacrificed to this sword every year, and even more than to other gods ”(Hdt. IV, 62). Ancient authors point to the special veneration of the god of war by the Scythian-Alans. In the &quot;Description of the Land&quot; by Pomponius Mela (1st century AD) it is said: &quot;Mars is the main god for all; instead of images, they dedicate swords and belts to him, and instead of sacrificial animals they kill people ... ” </span><span>[^ 7]</span><span>... The Roman historian Ammianus Marcellinus (c. 330 - c. 395 AD) testifies to the special veneration of the sword among the Alans: “They do not see any temples or sanctuaries ... they stick a naked sword into the ground according to barbarian custom and with good will they worship him like Mars ... ” </span><span>[^ 8]</span><span> . However, neither Greek nor Roman authors give the names of the Scythian-Alanian god of war, except for his identification with the Greek Ares (Roman Mars). This point has already been noted by researchers.</span></p><p><span>Despite the fact that the image of the sword god among the Scythians and Alans causes the least disagreement among researchers, there is no consensus on the essence, character and functions of this character. This is due to the lack of sufficient information about him. The most common interpretation of this deity is based on his identification with the Greek Ares. But neither Herodotus, nor other later authors of the name of this deity give. Researchers express different opinions on this matter.</span></p><p><span>In the opinion of L. A. Elnitsky </span><span>[^ 9]</span><span> , Herodotus did not dare to accept the Scythian name of the sword for his own name of the deity. SA Zhebelev </span><span>[^ 10]</span><span> assumed that this deity might not have had a Scythian name at all and that the very existence of the sword cult among the Scythians prompted Herodotus to include Ares in the Scythian pantheon. S. S. Bessonova admits several options: “... the name is taboo; it was not there at all, it was purely fetishistic sword worship; Herodotus does not name the name because of the significant functional overlap between the cults of the Greek Areus and the Scythian &quot; </span><span>[^ 11]</span><span>... A. Yu. Alekseev considers two options: “The first assumes the correctness of Herodotov&#39;s comparison of the sword cult with a certain deity named after the Greek god of war”; according to the second version, Herodotus could combine information about the Scythian sword cult &quot;... with the name of the Hellenic god of a bloody battle&quot; </span><span>[^ 12]</span><span> .</span></p><p><span>The deity of war, to whom more sacrifices were made than to all other gods, of course, could not but have his own name. It is difficult to agree that, upon hearing the story of human sacrifices as a gift to a deity, such an inquisitive person as Herodotus would not have inquired about the name of this deity. It is more than likely that this is what actually happened. After all, he wrote down the names of other Scythian deities. Thus, it should be assumed that the name of the Scythian god of war was still known to Herodotus. But why didn&#39;t he name it? In our opinion, Herodotus could be misled by the similarity of the name of the Scythian deity of war with the name of the Greek Ares.</span></p><p><span>In other words, the Scythian god of war, apparently, had a name phonetically similar to the Greek Ares, in addition to the functional coincidence, which Bessonova points to. Having heard from his informants the name of the Scythian god identical to the Greek Ares, one must think that the “father” of history could have come to the conclusion that the “barbarians” simply adopted him from the Greeks.</span></p><p><span>The functional coincidence and similarity of the names of the Scythian and Greek deities is the most probable reason why Herodotus could have considered that the &quot;barbarians&quot; borrowed this cult from the Greeks. And therefore, Herodotus, writing for the Greeks, did not need to specifically point out the “borrowing” of a deity, so “obvious” for the Greeks, that was well known to the Greeks. This assumption is also supported by his phrase: “This is the idol of Ares” (Hdt. IV, 62), which makes it possible to think that the “father” of history had no doubts that this was a Greek deity, and that the sword was just a manifestation of Ares among the &quot;barbarians&quot;. The same assessment of this deity is read in the words of Pomponius Mela: “instead of images, they dedicate swords and belts to him” </span><span>[^ 13]</span><span>... That is, according to the views of ancient authors, the &quot;barbarians&quot; dedicated swords and belts to the god of war, while the Greeks and Romans dedicated images to him.</span></p><p><span>Meanwhile, Herodotov&#39;s concealment of the name of the Scythian god of war, as well as the testimony of all other ancient authors, does not give any reason to consider the Scythian Ares as a transformation of any deity from the Iranian world. Also, antique authors give absolutely no reason to look for the homeland of Ares in the Iranian environment. The attempts of the Iranians to find Iranian &quot;parents&quot; for Ares are based solely on the fact that the opinion that the Scythians are Iranian-speaking prevails in historiography. The cult of Ares and his sanctuaries have nothing to do with either nomads or with the Steppe World in general: &quot;This cult is not attested either in the Indo-Iranian or in the general Iranian epic&quot; </span><span>[^ 14]</span><span> , and the information about the veneration of the sword among the Iranians is rare.</span></p><p><span>The only evidence of the veneration of the sword by the Persians and Medes is the message of Clement of Alexandria (II-III centuries AD) </span><span>[^ 15]</span><span> , which also gives no reason to believe that the sword cult was borrowed by the Scythians from the Persians or could have originated in the Iranian environment. Otherwise, it probably would not have remained unnoticed for ancient authors, especially for such an inquisitive person as Herodotus. A later author - Athanasius of Alexandria (c. 300-373 AD) - notes that the religion of the Persians for the Scythians was the religion of a people alien to them: “... the Scythians do not accept the gods of the Persians” </span><span>[^ 16]</span><span> . In such a situation, trying to present the Scythian Ares as a transformation of the Iranian god of war Verethragna (or Vedic Indra) is possible only with a very strong desire.</span></p><p><span>But the most insurmountable obstacle for the Iranians is the fact that the Scythians do not have a single legend or a single myth about Ares, which clearly indicates his non-Cythian origin. From the texts of the ancient authors, it is obvious that none of them even has an idea of how the Scythians got this cult.</span></p><p><span>So, the above leads us to the following conclusion: the cult of the sword did not originate among the Scythians (the absence of the myth about Ares firmly substantiates this); attempts to &quot;interrelate&quot; the sword cult of the Scythians with the deities from the Iranian world, with all the efforts of the Iranians, do not reveal the genesis of Ares; traces of his rituals are not found in the language and mythology of the Iranian peoples; the Scythians did not adopt the deity from their enemies, the Persians; borrowing from the Hellenes is very doubtful, because the Scythians “eschew not only the customs of other peoples, but especially the Hellenic ones” (Hdt. IV, 76). The Scythians not only did not accept the religion of the Greeks, but even punished with death for such a deed, as evidenced by Herodotus himself on the example of the fate of the Scythian sage Anacharsis. Of course, it cannot be argued that the Scythians avoided everything foreign in everything. The influence of the Greeks on the social sphere of the &quot;barbarians&quot; cannot be denied. But in matters of religion, as is clear from the testimony of Athanasius of Alexandria, the Scythians were conservative.</span></p><p><span>Judging by the importance and universal veneration of the Scythians, it seems that this deity should have been their native - Scythian, but the absence of a &quot;genealogy&quot; (myths, legends) completely deprives Ares of Scythian roots. Therefore, the version of the Scythian origin of Ares does not find confirmation in any way. In this situation, the question arises: maybe the Scythians borrowed the cult of the god-sword from non-Iranian tribes, from their own habitat?</span></p><p><span>The same Abaev did not deny the presence of a non-Iranian-lingual composition in the Scythian environment: “... it is quite possible that non-Iranian elements were also included in the composition of the peoples united by the ancients under the name of the Scythians and Sarmatians ...” </span><span>[^ 17]</span><span> . It would be fairer to start this formulation with the words “most likely”, because “a significant part of the“ barbarian ”names and names from the Northern Black Sea coast of the Scythian-Sarmatian era cannot be explained by means of Iranian languages” </span><span>[^ 18]</span><span> .</span></p><p><span>ON Trubachev believed that the ethnic environment of the Scythians was heterogeneous, and only &quot;... some of the Scythians spoke Iranian&quot; </span><span>[^ 19]</span><span> . It is known that the identity of religions does not serve as a criterion for the genetic relationship of tribes and this does not contradict the data on the rejection of the religion of &quot;foreigners&quot; by the Scythians. In other words, the Scythians-Iranians could borrow the cult of Ares from neighboring Caucasian tribes (“their own” not by blood, but from their own environment, or those close to them in terms of worldview).</span></p><p><span>Taking into account the fact that the North Caucasian autochthons (tribes of the Koban culture) had a developed metalworking technology, the region of which was a large center for the production of iron weapons (swords and daggers), the proposed scheme of the relationship of Iranian-speaking tribes with local autochthons is quite consistent. Academician N.Ya. Marr admitted an even closer, genetic, connection of the Scythians with the North Caucasian tribes, and not only with the Ossetians. Without denying the importance of the Iranians in the genesis of the Scythians, N.Ya. Marr admitted that &quot;... among the Japhetids, primarily the Japhetids of the Caucasus, with the Scythians there are also more significant connections, including their connection, apparently, of a genetic order&quot; </span><span>[^ 20]</span><span> .</span></p><p><span>As Kh. A. Khizriev notes: “There are quite a lot of ethnocultural parallels in the ethnography of the Scythians and the peoples of the North Caucasus. For example, on a vase from the Kul-Oba mound near the city of Kerch, Scythians are depicted with great skill, dressed in beshmet, girded with a mountain belt, in typical trousers. On the legs are Caucasian leggings, and on the head is the famous head. In appearance and clothing, they do not differ at all from the Caucasian highlanders ” </span><span>[^ 21]</span><span> .</span></p><p><span>TV Blavatskaya also writes about the connection between the Kobanians and Scythia: “The archaeological material available at present testifies to the existing ties of the Thracians with the bearers of the Koban culture who lived in the Caucasus at the end of the 2nd - beginning of the 1st millennium BC. e. &quot; </span><span>[^ 22]</span><span> . And according to VI Kozenkova, the connection of the Carpathian-Danube world with the North Caucasus “... can hardly be satisfactorily explained only by regular contacts of an exchange nature. We can probably talk about some ethnic inclusions ” </span><span>[^ 23]</span><span> .</span></p><p><span>The borrowing of this cult by the Scythians is also indicated by the opinion of D. S. Raevsky: &quot;... everywhere, when the Iranian society reached the stage at which the need arose to add iconography of religious and mythological images, it was formed on a foreign cultural basis&quot; </span><span>[^ 24]</span><span> . Based on this kind of relationship between the Iranian-speaking tribes from among the Scythians and the ancestors of the Chechens (Kobanians), the status of “aliens” in relation to the latter could only be nominal. In other words, in this situation, the representatives of the Koban culture for the Scythian-Iranians, it must be, could well be considered their own.</span></p><p><span>Noting the fact of the discovery and the first practical application of iron by the Caucasian tribes, the French researcher Paul Kuissen unequivocally points out that the Hittites borrowed the iron sword and its cult from the Caucasians. Petersburg scientist, Doctor of Historical Sciences I. Yu. Shaub, who is also of the opinion about the Caucasian origin of the Scythian Ares, notes that Kuissen “... well explains the fact that the shape of the god-sword in the Yazylykai relief is the shape of the Caucasian iron, and not the bronze sword common in the Aegeis ” </span><span>[^ 25]</span><span> . Kuissen himself on the origin of the sword cult among the Scythians is unambiguously expressed: “While the sword cult (at least in its elementary form) died out in Asia, in Europe the Caucasians passed it on to the Scythians, in whom, six centuries later, Herodotus discovered it practically unchanged form &quot;</span><span>[^ 26]</span><span> . In addition to everything, the direct prototype of the &quot;Scythian&quot; akinak is the Koban swords and daggers </span><span>[^ 27]</span><span> , as well as the very traditional form of Scythian-type swords also developed in the North Caucasus </span><span>[^ 28]</span><span> .</span></p><p><span>The veneration of the deity of war is known among various peoples, and the ritual design of this cult was expressed in various forms. The ideological basis of the cult is manifested in examples that reveal its essence: “According to the ideas of the ancients, iron tools and weapons possessed great magical power, especially piercing weapons, as combining two magical properties (metal and sharpness)” </span><span>[^ 29]</span><span> . One of these “magical” properties - “sharpness”, revealing the essence of the sword, we find in the name of the ancient pagan deity of Chechen warriors - Ars, whose name etymology literally means “sharp edge, edge”. The name of this cult still resounds in the dancing exclamations of the Chechens, but more on that later.</span></p><p><span>As you know, first of all, the criterion for the emergence of the name of any object in ancient times was its essence. The names of the pagan gods were no exception: &quot;The name, according to the concepts of the ancients, contained the essence of the deity ...&quot; </span><span>[^ 30]</span><span> . The Chechen theonym Ars consists of two stems </span><em><span>Ar</span></em><span> + </span><em><span>s</span></em><span> ( </span><em><span>/ sa</span></em><span> ). The meaning of </span><em><span>ir (ir &lt;ar)</span></em><span> &#39;sharp, sharpness&#39; goes back to the initial base </span><em><span>Ap /</span></em><span> . Its second part - </span><em><span>/ s (sa)</span></em><span> - means &#39;face, strip, angle&#39;. Thus, the name of the theonym Ars in the Chechen language literally means </span><em><span>Ar + s (ir + sa)</span></em><span> ‘острая + грань’, а лезвие меча по своей сути и есть острая грань. Как очевидно, этимология чеченского теонима Арс полностью покрывает определение с у щ ­ ности меча и ножа, к основе которого закономерно восходит чеченское урс ‘нож’</span><span>[^31]</span><span>.</span></p><p><span>It is probably not entirely expected for the Iranians to compare the name of Ares with the etymology of the Chechen name for the knife urs (plural ars / ash, ash is a plural suffix). I would like to preface this with the opinion of L. A. Elnitsky: “... when studying ancient names, especially etymologically unclear and single ones, any comparisons are extremely valuable, from which, through their appropriate classification and selection, reliable material can be obtained for their historical understanding and geographic mediation ” </span><span>[^ 32]</span><span> . It seems that there is hardly a more suitable correspondence for defining the essence of the god of war Ares than the meanings of &quot;sword&quot; and &quot;knife&quot; (cf. Chech. Ars).</span></p><p><span>As you know, a knife is the first cutting weapon of primitive man. Before the development of metal, weapons and some other necessities were mainly made of stone. In order for the stone to cut, it was necessary, of course, to sharpen (sharpen), make it sharp, or hollow out a sharp edge (sharpen one of the sides). It was this sharpened (or simply sharp) edge that could turn an ordinary stone into an object that is worn out for a person. Apparently, it was precisely such a sharp edge ( </span><em><span>ap + s</span></em><span> ) as the definition of a cutting object that served as the basis for the origin of the name for a knife (urs) among the distant ancestors of the Chechens. For comparison, in the Urartian language, the house of arms was called </span><em><span>uris huse</span></em><span> </span><span>[^ 33]</span><span> : </span><em><span>uris</span></em><span> &#39;weapon&#39;, </span><em><span>huse</span></em><span> &#39;house&#39; (cf. Chech.</span><em><span>ars</span></em><span> , Gothic </span><em><span>hairus</span></em><span> &#39;sword&#39; </span><span>[^ 34]</span><span> ). The Chechen meanings: </span><em><span>mars</span></em><span> &#39;sickle&#39; and </span><em><span>marsa</span></em><span> &#39; </span><em><span>scorch</span></em><span> &#39; (pranakh form - </span><em><span>marsa</span></em><span> </span><span>[^ 35]</span><span> ) - allow us to think about the functional proximity of the theonym Ars to the cult of fire or home hearth. It is noteworthy that the Roman god of war Mars was also associated with the cult of fertility and fire </span><span>[^ 36]</span><span> .</span></p><p><span>The name of this cult also has an additional epithet Arsel (Arsel) - </span><em><span>ela</span></em><span> &#39;lord, god&#39; (literally, Ars ruler), and this epithet ( </span><em><span>ela</span></em><span> ) undoubtedly denotes the status of theonym a. And the meaning of the names of Chechen teips - </span><em><span>arsloy</span></em><span> ( </span><em><span>Ars + loy</span></em><span> ) &#39;Arsa people&#39; and </span><em><span>arselkhoy</span></em><span> ( </span><em><span>ars-el + khoy</span></em><span> ), literally &#39;Arsa of the ruler of people&#39; ( </span><em><span>/ lo, / ho</span></em><span> - suffix for the definition of a person plural) - complement this picture.</span></p><p><span>We also find a deity with a similar name in the Urartian pantheon. An inscription carved on a rock wall near Lake Van informs </span><span>[^ 37]</span><span> of the order of King Menua (reigned 810 -786 BC) to sacrifice two bulls and four sheep to the deity Arsimela (Arsimela). We do not yet have information about the functions of the Urartian Arsimela. But such a coincidence of the names of the deities can hardly be considered an accident.</span></p><p><span>The deity, which in ancient times had such a great importance in the religious worldview of people, could not but leave traces of its influence in the language in which it arose: Chech. </span><em><span>bursa</span></em><span> &#39;formidable, harsh&#39; (literally &#39;ursoy&#39; &#39;foot&#39;, </span><em><span>b /</span></em><span> - a great indicator), </span><em><span>morsa</span></em><span> &#39;rough, tough&#39;, </span><em><span>sorsa</span></em><span> &#39;angry, furious&#39;.</span></p><p><em><span>Ghars</span></em><span> is an idiom expressing the performance of a confident, bold, decisive action or deed, in the meaning of &quot;cut off, cut off.&quot;</span></p><p><em><span>Hars</span></em><span> is an idiom for taking a quick action with the meaning &quot;cut off, cut off.&quot;</span></p><p><em><span>Kӏars</span></em><span> is an idiom denoting taking a quick action in the meaning of &quot;cut off&quot; in relation to objects of small size. It should be noted that the semantics of these idioms has nothing to do with the Chechen verb </span><em><span>khada</span></em><span> &#39;cut, cut off&#39;. And, as you can see, they all consist of the root </span><em><span>ars</span></em><span> and denote the concept of &quot;cut off&quot; or &quot;cut off&quot;. It is obvious that the definition of the essence of the sword in the Chechen language has become not only the name of the deity of warriors, but on its basis various variants of meanings have been formed that determine its functional activity.</span></p><p><em><span>Ethnonyms</span></em></p><p><span>Since ancient times, the names of pagan gods have become a source of personal names and ethnonyms in proportion to their religious significance. The Chechen sword cult Ars became the same source. In ancient times, people believed in the magical power of the name, believing that the name can influence or predetermine the fate and character of a person. As a result of this worldview, such names appeared as &quot;Brave&quot;, &quot;Fearless&quot;, etc. The ancient Nakhs named their offspring in the name of the deity of warriors: Ars, Arsan, Arsak, Arsala ( </span><em><span>ela</span></em><span> &#39;lord&#39;), Arsnuk, Arsmak, Arsmuk ( </span><em><span>muk</span></em><span> &#39;handle&#39;), from which come the Chechen surnames - Arsaev, Arsanov, Arsakov, Arsaliev, Arsanukaev, Arsamakov, etc.</span></p><p><span>The influence of this cult was reflected in onomastics and other peoples. For example, the ancient Greek </span><em><span>Aristarchus</span></em><span> &#39;the best leader&#39; is in the background close to the Chechen </span><em><span>Arstakh</span></em><span> - </span><em><span>Ars +</span></em><span> </span><em><span>takh</span></em><span> &#39;beating (striking) Arsom&#39; (?). The semantics of such meanings as &quot;arsenal&quot; and &quot;aristocrat&quot; fundamentally merge with the ideology of the sword cult:</span></p><p><span>Arsenal - </span><em><span>Arse / nal</span></em><span> (eng.) 1) &#39;weapons store&#39;, 2) &#39;stock of weapons&#39;, 3) &#39;source of power&#39;, 4) &#39;weapons&#39;; </span><em><span>Aristokrat</span></em><span> - </span><em><span>Aris + to + krat</span></em><span> ( </span><em><span>krat</span></em><span> &#39;power&#39;), which corresponds to the meaning of &quot;the power of Ares&quot;, or &quot;possessor of (the power) of Ares.&quot; Obviously, in ancient times, the possession of Ares (sword) was an attribute of power and special privileges for a certain category of people. In support of this interpretation, we have the evidence of the Byzantine historian Irisk Paniyskiy (5th century) </span><span>[^ 38]</span><span> . Of interest are also the names in the etymology of which, according to Ossetian scholars, the “Iranian” basis is revealed:</span></p><p><span>Ars - &quot;bear&quot;, Scythian;  Arsak - &quot;bear cub&quot; (king of the Aparna Daevas of the 3rd century BC);  Arsakom - &quot;loving bears&quot;, the leader of the Scythians;  Arsam - &quot;brave&quot;, Alan .;  Arsamag / Arsamak - &quot;the most courageous&quot;, Osset;  Arsamat - &quot;the bravest&quot;, Osset;  Arsau - &quot;like a bear&quot;, Osset;  Arsi - &quot;bear&quot;, Osset;  Arsoy - &quot;bear cub&quot;, Osset;  Arsuk - &quot;bear cub&quot;, Alan.</span></p><p><span>In the listed names, a large number of &quot;varieties&quot; of the names &quot;bear cub&quot; and &quot;bear&quot; are striking. Besides the fact that the image of a bear and a teddy bear is in no way associated with the concepts of &quot;courage&quot; and &quot;courage&quot;, there are no typological examples explaining the epithet (&quot;bear cub&quot;) so uncharacteristic of tsars.</span></p><p><span>Undoubtedly, it would be much more tempting for the Scythian-Alanian kings or leaders to name their own god of war, whom they worshiped more than all their other deities. And against the background of such a comparison, the Ossetian &quot;variations&quot; of the meaning of &quot;bear&quot; can hardly be compared in the degree of correspondence with the name of the Chechen deity of warriors Ars. In this case, there can hardly be any doubt that the meanings of the Scythian name Ars (&quot;bear&quot;) and the Ossetian name Arsamat (&quot;the bravest&quot;) correspond more to the association of the god of war than to a bear or even more so to a bear cub. In other words, the semantics of these names is more consistent with the character of the Chechen war deity Ars, both phonetically and semantically, than all the associations and characteristics of a bear and a bear cub combined.</span></p><p><em><span>The names of the Chechen teips dating back to the theonym Ars</span></em></p><p><span>The names of the Chechen teips are: arsoy ( </span><em><span>orsoy, uorsoy</span></em><span> ), arsloy, arseloy ( </span><em><span>ars-eloi</span></em><span> || </span><em><span>ars-elhoy</span></em><span> ), ersnaya, arstkha ( </span><em><span>arshtkhoy, warstkhoy, orstkhoy</span></em><span> ). The current version about the origin of the name &quot;arstkhoy&quot; (&quot;karabulaki&quot;) from the basis of </span><em><span>arts</span></em><span>&#39;mountain covered with forest&#39; is unconvincing and, in our opinion, is wrong. Otherwise, in addition to arstkhoy, other Chechen teips living on the mountain slopes would have received the same name &quot;inhabitants of wooded slopes&quot;. In our opinion, the meaning of the ethnonym “Arstkhoy” should be considered as a definition of the admirers (adherents) of the cult of the Ars sword, as well as the meanings of the following ethnonyms: Arsoy - “Arsovites; belonging to ars ”, arsloy -“ Arsa people ”, arseloy (Ars-eloy) -“ who worship the Lord ”.</span></p><p><span>Arstakhoy (“beating Arsom”) is one of the branches of the Teip TӀerloi, whose ancestral settlement was also called Arstakh: “The ethnic group of Vainakhs who call themselves“ Arseloy ”has survived to this day. They live in Roshni-chu, Gekhi-chu ” </span><span>[^ 39]</span><span> , (compare Chech. </span><em><span>Arsoy</span></em><span> || </span><em><span>arseloy</span></em><span> (from the theonym Ars) with the name of the Italic tribe Mars (from the god of war Mars), the similar name of the Germanic tribe is marsi, and also the name of the ancient Germanic tribe </span><em><span>Herusci</span></em><span> &#39;swordsmen&#39;, and the Gothic </span><em><span>hairus</span></em><span> &#39;sword&#39;).</span></p><p><span>According to the legend of Elistanzhians, the ancestor of their teip was Ors-ela </span><span>[^ 40]</span><span> ( </span><em><span>ors</span></em><span> &lt; </span><em><span>ars</span></em><span> , </span><em><span>ela</span></em><span> &#39;sovereign&#39;). In this context, one cannot ignore the ethnonym &quot;Aorsy&quot; - the name of one of the tribes that were part of the Sarmatian union. As you know, the Aorses occupied the territory between the Caspian and Azov Seas, reaching the foothills of the Caucasus along the western coast of the Caspian. In the scientific literature, there is no data linking the genesis of the Aorses with the Nakhs, except that their name is similar to the name of the Chechen teip Arsoy. In the light of the above, it must be admitted that the ethnonym &quot;Aorsy&quot; (the eastern version of the name - </span><em><span>arsi</span></em><span>) clearly suggests itself for comparison with the Chechen theonym Ars. And taking into account the fact that there is information about the worship of the sword cult by the Sarmatians, it is quite acceptable to think that the name &quot;aorsa&quot; could arise on the basis of the Chechen sword cult Ars.</span></p><p><span>This assumption is consistent with the point of view of Ya. S. Vagapov: “It is extremely important to take into account that the language of an ethnonym and the language of an ethnos may not coincide, since peoples and tribes have not only self-names, but also other names given by other peoples in their languages. &lt;...&gt; If we speak in relation to the North Caucasus of the Sarmatian era, then one should not rush to the conclusion that the ethnos, which had, for example, the Nakh name, was itself Nakh-  speaking , and Iranian-Iranian- speaking ” </span><span>[^ 41]</span><span> . In addition to the above, our assumption is consistent with the thoughts of N.Ya Marra </span><span>[^ 42]</span><span> , which can be denoted in the following form: the Aorses, probably a tribe alien to the Caucasian world, but adopting the Caucasian name on a religious basis.</span></p><p><em><span>Place names</span></em></p><p><span>The emergence of toponyms is not an accidental phenomenon, but a chain of regular interconnection - the law of a number </span><span>[^ 43]</span><span> . In Chechnya, there are a number of toponyms and settlements, the names of which are based on the theonym Ars. The names of the following settlements, in our opinion, not only correspond to the law of a number, but also reveal a semantic connection with the cult of the sword Ars:</span></p><p><span>Arshta - &quot;to Arsam na&quot; (?) </span><span>[^ 44]</span><span> . In all likelihood, there were shrines of the Ars sword cult in this area.</span></p><p><span>Ersana is a village </span><span>[^ 45]</span><span> , located 7 km northeast of Vedan. This name can be translated as &quot;Arsa locality&quot; or &quot;to Arsa area&quot; (with topoformant </span><em><span>/ on</span></em><span> ). On the map </span><span>[^ 46]</span><span> , compiled in the early 1850s by the Naib of Imam Shamil (ethnic Chechen) Yusuf-Khadzhi Safarov, the name of this village is given in the form </span><em><span>Arsin</span></em><span> (&#39;Arsovo (place)&#39;). It is noteworthy that according to the legend </span><span>[^ 47]</span><span> of the teip ersenoy, they moved to the Vedensky region (Ichkeria) from the territory of Urus-Martan, the origin of the name of which we will discuss below.</span></p><p><span>Arsiel duk </span><span>[^ 48]</span><span> - literally “Arsa of the lord of the ridge (?)”.  Arsielashtsh </span><span>[^ 49]</span><span> - literally &quot;to the Arsa sanctuaries on&quot; (?). As A. Suleymanov writes, several places of worship were erected there.  Arseloin lam </span><span>[^ 50]</span><span> - &quot;Arseloitsev mountain&quot; (or &quot;Arsa mountain sanctuary&quot;).  Tursiel duk - &quot;The backbone of the sword (god) of Siela&quot; </span><span>[^ 51]</span><span> .  Turhalashka ( </span><em><span>tour</span></em><span> &#39;sword&#39;) - the area where the experienced blades sharpness </span><span>[^ 52]</span><span> .</span></p><p><em><span>Dual Essence of the Godsword</span></em></p><p><span>In the view of ancient people, pagan deities possessed an essence represented by a dual power: for example, fire (the power of the sun) “possessed” a dual power - “fire burning” and “fire giving life”. The deity of war and bloody battle Ars in its status could not help but combine these two hypostases - &quot;death&quot; and &quot;grace&quot;. “The classical deity of war, bloody battle - Greek Ares, traditionally associated exclusively with the military area, in pre-Homeric times was a chthonic deity“ bringing grace and death ”...” </span><span>[^ 53]</span><span> . For some, the essence of a god-sword meant death, which for others, accordingly, was grace. &quot;In another of its meanings, the sword is a symbol of the Verb or Word, with its double power of the creator and destroyer ...&quot; </span><span>[^ 54]</span><span> .</span></p><p><span>In this aspect, the name of the settlement in Chechnya Urus-Martan is of interest for our topic. Even in Soviet times, historians made attempts to identify the etymology of its name. Professor VB Vinogradov put forward a version that the first part of the name - urus / - means &quot;Russian&quot; (&quot;Russian Martan&quot;), as &quot;a consequence of the presence of the Russian garrison of the tsarist troops there.&quot; The same version is repeated in his dictionary by A. V. Tverdiy, according to which in the valley of the Marta river of the same name “... in the 19th century a Russian fortress was built, which was named Urus-Martan -“ Russian Martan ”” </span><span>[^ 55]</span><span> .</span></p><p><span>From a scientific point of view, this version does not stand up to criticism. And it should be noted that this is not the only example of the incorrect interpretation of the meanings of the toponyms of Chechnya in the work of A. V. Tverdiy. It would be impermissible for an impartial scientist to deduce the etymology of the name on only the dubious consonance of one part of this name ( </span><em><span>Urus- /</span></em><span> ) with the Türkic name of the Russian Urus, especially if such a name for Russians does not exist in the Chechen lexicon.</span></p><p><span>If we follow the logic of A.V. Tverdiy, the component </span><em><span>urus /</span></em><span> should have attached not only to one name Urus-Martan, but also to the names of a dozen other settlements in Chechnya, where the tsarist government in the 19th century established fortifications with garrisons of troops. Even before the establishment of a fortification on the banks of the Martan River by the tsarist troops and the appearance of a Russian garrison there, the village of Urus-Martan consisted of several farmsteads scattered along the river of the same name, which were divided according to the teip principle. On the map of Yusuf-Khadzhi Safarov, they are marked as “Urusmartanovskie khutor” </span><span>[^ 56]</span><span> . And only after the final conquest of Chechnya, the inhabitants of these farms, for the convenience of control over them, were herded into one large village, to which the name Urus-Martan was finally fixed.</span></p><p><span>The name of the river Yusuf-Khadzhi itself is given in the form Urusmartan, from which it follows that Martan is its truncated form, which in turn allows us to say that Urus-Martan is a Russian transcription of the Chechen Urs-Mart ( </span><em><span>urs</span></em><span> &#39;knife&#39;), ascending to the original form Ars-Mart ( </span><em><span>urs</span></em><span> &lt;- </span><em><span>ars</span></em><span> ) </span><span>[^ 57]</span><span> . It is noteworthy that in the above-mentioned map of Safarov the name of the second river Martan (Fartanga), flowing through Achkhoy-Martan, is given in the form of </span><em><span>Arshta-Martan</span></em><span> , and the Achkhoy fortification (now the village of Achkhoy-Martan) is given in the form of </span><em><span>Arshi-Martan</span></em><span> </span><span>[^ 58]</span><span>... That is, at least until the middle of the 19th century, the village of Achkhoy-Martan was called Arsh- (Ars?) - Martan. And its transformation into the current form, presumably, occurred when these places were settled by residents of the nearby village of Iashkhoy-kIuotar (Achkhoy-khutor), after the representatives of the teip arstkhoy (Karabulaks), who had previously inhabited this area, almost all of them moved to Turkey in the bo-ies of the XIX century.</span></p><p><span>The function of the sword is primarily aimed at killing. The &quot;disastrous&quot; side of the god of war is death and destruction. How could his “blessed” side be expressed? In Chechen, </span><em><span>mart</span></em><span> means &quot;grace, funeral feast, abundant food&quot; (in Batsbi - </span><em><span>matr</span></em><span> , with metathesis). The semantics of the word </span><em><span>mart</span></em><span> goes back to the original meaning &quot;ritually pure food, memorial meal&quot; </span><span>[^ 59]</span><span> . The concepts of &quot;ritually pure food&quot; and &quot;memorial meal&quot; have an exclusively religious connotation. Accordingly, the semantics of the word </span><em><span>mart</span></em><span> , presumably, also comes from the religious basis of the sacrifice rite. And in honor of the deity of war, as you know, sacrifices were made in large quantities.</span></p><p><span>Based on the analysis of the given data, it seems to us that in the semantics of the name Urus-Martan &lt;Urs-Mart &lt;Ars-Mart, just like in the name Achkhoy-Martan &lt;Arsh-Mart &lt;Ars-Mart) </span><span>[^ 60]</span><span> , the indicated we are above the “dual nature” of the cult of the sword: the first is the name of the deity Ars proper, and the second is Mart in the meaning of “grace (funeral)”. The probable reason for the consolidation of this name for these settlements, presumably, was the cult rituals of sacrifice carried out in these areas in honor of the cult of the sword Ars. Thus, the analysis of the names Urus-Martan and Achkhoy-Martan, in accordance with the law of the series </span><span>[^ 61]</span><span> , leads us to the idea that the etymology of these names means &quot;the place of (initiation) of the funeral&quot; (sacrifices) to the cult of the sword Ars.</span></p><p><em><span>Chechen dance</span></em></p><p><span>The examples given above are only a part of those traces of the sword cult that the Chechen language has carried to our days. But traces probably should have been preserved not only from the name of the cult, but also from the rites and rituals dedicated to it. And these traces lead us to the origins of the Chechen dance. It would seem, what information about the cult of the sword among the Scythians can the Chechen dance give us today, especially since almost two and a half millennia have passed since the moment of its description by Herodotus? However, despite such a huge period of time that separates us from that era, important attributes of this cult, which make it possible to recreate a part of the picture of ancient religion, are unexpectedly found in the Chechen dance.</span></p><p><span>The origins of folk choreography go back to ancient times. Choreography is undoubtedly a product of the ritual practice of paganism and an integral part of religious celebrations in various cults, later on holidays. Unfortunately, the study of the dance culture of the Chechens leaves much to be desired. But, despite the age of this cult, the choreography of the Chechen dance has not lost its complex elements, imitating ritual actions dedicated to the military cult of Ars. The religious worldview of the ancient Chechens, embedded in dance, is clearly reflected in its characteristic elements. Chechen dance - khalkhar, in the tradition of the Russian language called &quot;lezginka&quot; - originally in its origin goes back to the ritual of a military ritual. The impulsiveness of movements in the dance characterizes the qualities of a warrior - agility, courage, courage.</span></p><p><span>Speaking about the origin of the Chechen dance, the Chechen ethnographer AS Suleimanov writes: “Chechen warriors, in front of the enemy, stood in a wide circle and began to loudly exclaim“ Ars-wai! Ars-toh! &quot; &lt;...&gt; and dancing, striking the shields with swords and daggers, they were rapidly approaching the enemy. Excited to the point of fury, they entered into a fierce battle with the enemy &quot; </span><span>[^ 62]</span><span>... It should be noted that the dancing situation was not a consequence of carelessness or ostentatious arrogance. It was a martial culture - a kind of ecstatic trance technique used in combat, combining deadly rage and equanimity. Such dances, obviously, contributed to the psychological mood of the warriors to unbridled rage and disregard for death, which in the end, probably, deprived the warriors of the feeling of pain and fatigue. As an analogy, we can cite the behavior of the Scandinavian berserkers before the battle, who from an early age devoted themselves to serving Odin.</span></p><p><span>Etymology of the exclamation &quot;Ars-toh!&quot; literally means &quot;Arsom bey&quot; ( </span><em><span>toh</span></em><span> &#39;beat, hit&#39;), &quot;Ars-wai!&quot; - &quot;Ars our&quot; (wai &#39;our&#39;). Obviously, the meaning of these exclamations corresponds exactly to the characteristics and very essence of the god of war. In this context, this exclamation unexpectedly reveals the object to which it is dedicated and which was the most significant cult also among the Scytho-Alans. Apparently, the exclamations of &quot;Arstokh!&quot; and &quot;Ars-wai!&quot; had a certain significant role in the rituals of this cult, and during the battle they served as a command to attack the enemy or as a signal of readiness. The fact that they turned out to be inalienable attributes of Chechen dance indicates that the dance was originally a military ritual.</span></p><p><span>In the light of all of the above, we are haunted by the idea that the name of the Scythian god of war, not called by Herodotus, may be the name of the Chechen sword cult Ars. Moreover, the Scythian name for the sword akinak is &quot;a clear borrowing&quot; </span><span>[^ 63]</span><span> from the Pranakh stem </span><em><span>ɦahki nek</span></em><span> ( </span><em><span>achki nek</span></em><span> ) &#39;iron knife&#39; (compare Chech. </span><em><span>Ēčig</span></em><span> , Ing. </span><em><span>Äšk</span></em><span> , batsb. </span><em><span>Ajhki</span></em><span> and </span><em><span>nek</span></em><span> &#39;knife&#39;) ... That is, this comparison allows one to think that the Iranian aki-nak &quot;sword&quot; is a borrowing from the Nakh achki-nek &quot;iron knife&quot;. This argument unambiguously points to the genesis of the Scythian god-sword.</span></p><p><span>Shout &quot;Ars-toh!&quot; in a truncated form ( </span><em><span>assa</span></em><span> ) we observe in dances among other peoples of the Caucasus. Apparently, due to regressive assimilation ( </span><em><span>ars-sa</span></em><span> || </span><em><span>ass</span></em><span> ), the sound c absorbed the previous r, as a result of which a truncated form of the variant from the Chechen </span><em><span>ars-sa appeared</span></em><span> . Note that it is observed only in the peoples of the Caucasus similar to the Chechen dances. Nakh neighbors Ossetians also use </span><span>[^ 64]</span><span>in his dance the Chechen exclamation &quot;Ars-tokh!&quot; However, neither in Ossetian, nor in any other language of the Iranian group, does he give the meaning of &quot;strike with a sword&quot; or &quot;strike with a knife.&quot; In none of the Iranian languages, the name of Ares, with all the efforts of the Iranians, does not come close to any of the Iranian names of deities and does not correspond to the meaning that determines the essence of a sword or knife.</span></p><p><span>Thus, by comparing the material of the Chechen language with these sources, we find that the Chechen dance has preserved and brought to our days the most important attributes of the cult of the sword, namely the name of the theonym Ars, and the ritual elements of the rituals dedicated to it.</span></p><p><em><span>Warrior dances of the &quot;descendants of Ares&quot;</span></em></p><p><span>In the description of the so-called &quot;March of Thousands of Greeks&quot; by Xenophon, one of the commanders of the Greek mercenaries retreating through Colchis to the Black Sea coast, our attention was attracted by a curious detail in the behavior of the Black Sea Halibs: “Of all the peoples through whose lands the Hellenes passed, the Halibs were courageous and entered hand-to-hand with the Hellenes. ... They also wore leggings and helmets, and at the belt a dagger like a Laconian sword; to them they cut anyone who fell into their hands ... when the enemy could see them, they sang and danced ” </span><span>[^ 65]</span><span> .</span></p><p><span>An analogy involuntarily suggests itself to the behavior of the Khalibs - an ancient military ritual of the Chechens: “The ancestors of the Vainakhs, approaching the enemy, in full view of him began frantic dances with exclamations:“ Ars-wai! ” &quot;Ars-toh!&quot; ... &quot; </span><span>[^ 66]</span><span>... One cannot but admit that the examples of the behavior of the Khalibs and the Chechens have a clear correspondence. And in the light of such a comparison a reasonable question arises: are not the fighting &quot;frantic dances with exclamations:&quot; Ars-wai! &quot; and &quot;Ars-tokh!&quot; &quot;Chechens and&quot; chants with dances &quot;of the Black Sea khalibs with the same fighting ritual of soldiers - a characteristic manifestation of reverence for the same military cult? Both those and others begin to dance precisely at the sight of the enemy ... Given the fact that the Khalibs are Hurrians-Urartians, and the relationship of their language with the Chechen language is a fact established by science, exclamations ( </span><em><span>Ars-tokh!</span></em><span> &#39;Hit with the sword&#39;) at In these circumstances, the Greeks who did not know the language of the Halibs could well have considered it a battle chant.</span></p><p><span>The “pedigree” of the Khalibs also speaks in favor of our interpretation. In the scholias to the &quot;Apollonian campaign of the Argonauts,&quot; the origin of the Khalibs is traced precisely to Ares: “They were named Khalibs from the son of Khalib Ares” </span><span>[^ 67]</span><span> . That is, the Urartian-Khalibs were the “descendants” of the god of war Ares, and his “son” - Khaldi (Khaldi is the self-name of the Khalibs) - was the supreme god of the Khalibs. In this context, another parallel can be cited: the “son of Ares” is called the ancestor of the Khalibs, while the name of the ancestor of the Chechens - Turpal </span><span>[^ 68]</span><span> - consists of the stem </span><em><span>tur</span></em><span> &#39;sword&#39;.</span></p><p><span>There is also another evidence of the relationship of Chechens with the Khalibs - this is the Chechen legend, which speaks of the resettlement of the ancestors of the Chechens from Western Asia, some of whom, on their way to the Caucasus, “remained to live with the Khalibs on the southeastern coast of the Black Sea” </span><span>[^ 69]</span><span> . It should be emphasized that in this legend, written down by N. Semenov at the end of the 19th century, the cajno name of the Haliba has been preserved, descended from all known historical sources in the first centuries of the new era.</span></p><p><em><span>Scytho-Chechen isoglossa</span></em></p><p><span>When it comes to Scythian &quot;altars&quot; made of brushwood, one must proceed from the fact that the sword must have been taken out for the holiday, for the solemn cult ceremony of al, and at a certain signal it was hoisted to the top where it remained until the end of the ceremony. The rest of the time, the sacred sword, presumably, could be kept by the elders or the leader of the tribe. Apparently, this was a special responsibility, respectively, and a special position for the guardian of the god-sword (cf. </span><em><span>Aris + to + krat</span></em><span> &#39;possessor of the power of Ares&#39;). Hence, the origin of the names and nicknames of kings, chiefs (or tribal elders) on behalf of the deity of war follows naturally.</span></p><p><span>L.A. Yelnitsky notes the fact of a kind of &quot;religious evolution&quot; that took place in the Scythian religion for about one millennium: &quot;If in the story of Herodotus attention is drawn to the fact of the plurality of Scythian&quot; Ares &quot;, wooden altars of which were installed on ancestral territories, then from the story of Irisk Paniysky, it is clear that the sword of Ares is the property of only the king as a symbol of the supreme military power ” </span><span>[^ 70]</span><span> .</span></p><p><span>Without going into the details of the story about the &quot;discovery&quot; </span><span>[^ 71]</span><span> of the Hunnic leader Attila of the sacred sword </span><span>[^ 72]</span><span> , it is important to note the fact that for the &quot;legal&quot; justification of the status of the supreme ruler Attila needed the sacred sword of Ares. In this connection, another Chechen analogy seems interesting. Since ancient times, the Chechens called the military leader Tur-da </span><span>[^ 73]</span><span> , which literally means &quot;the owner of the sword&quot; ( </span><em><span>tur</span></em><span> &#39;sword&#39;, </span><em><span>da</span></em><span> &#39;owner, owner, master&#39;) </span><span>[^ 74]</span><span> . The bearer of this title was given a sword (or saber) as an attribute of the power of the supreme leader. The Urartians had a similar name: the main military leader of the state of Urartu was called Turtan </span><a href='compare Urartu *turu* &#39;to smash, destroy&#39; [^ 76] '><span>^ 75</span></a><span>. The last person to whom the Chechens conferred the title Tur-da was Uzun-Khadzhi Saltinsky, after he proclaimed the North Caucasian Emirate in 1919. Thus, the title Tur-da (&quot;sword wielder&quot;) as an attribute of the supreme leader is undoubtedly an echo of the ancient religious worldview of the Chechens.</span></p><p><span>In the study of the cult of Ares, the most difficult question is considered to be its origin. The Iranians, as you know, tend to look for the roots of Ares exclusively within the Indo-Iranian world, despite the fact that the Indo-Iranians did not have a military deity, even closely resembling the worship of the sword cult among the Scythians. Meanwhile, the name of the Greek Ares approaches the name of the Chechen deity of war Ars, with the only difference that his Chechen etymology clearly corresponds to the essence of the sword of God. Taking into account the material presented, these coincidences, in our opinion, indicate that the Greek Ares is the cult of the sword Ars borrowed (probably through the Hurrians) by the ancient Hellenes from the distant ancestors of the Chechens.</span></p><p><span>The Greek myth of Ares does not in any way indicate </span><span>[^ 77]</span><span> his Greek origin. Moreover, most of the gods from the Greek pantheon are not only of non-Greek origin, but the very Greek theogony (Hesiod) (Hes. Th.) Is borrowed </span><span>[^ 78]</span><span>Greeks precisely from Hurrian mythology. In addition to this, the ancient Greek author Pausanias (2nd century AD) considers the Caucasus as the birthplace of Ares: “... of all the temples built along this road, the most ancient is the sanctuary of Ares ... the statue, they say, was brought here by Dioscuri from Colchis. Ares is referred to here as Terith from Thero, who is considered Ares&#39; nurse. It may very well be that the name Terith is borrowed from the Colchians, since the Hellenes do not know the Aresian nurse Thero; It seems to me, however, that the nickname “Terit” [ie, brutal] was given to Ares not from the nurse, but because, having entered the battle, one cannot have a feeling of meekness towards the enemy, just as Homer said about Achilles: “ like a lion, he only thinks about ferocity ”” </span><span>[^ 79]</span><span> .</span></p><p><span>The ancient Greek author not only believes that the Greek god Ares is of Caucasian origin, but is also convinced of the erroneous interpretation and nickname of Ares - &quot;Terit&quot;, which is considered (according to the Greeks) allegedly descended from the &quot;nurse&quot; Thero. And here we again have several convergences, clearly indicating the &quot;pedigree&quot; of the &quot;Greek&quot; Ares. The first is the similarity of the name of the “nurse” - Tero - with one of the Chechen names for the sword - tour. Against the background of such a comparison, the value of &quot;brutal&quot; as obviously did not fit in with the image of &quot;woman-nurse,&quot; but clearly conforms to the god of war, and a bloody battle (Wed Urartu. </span><em><span>Turu</span></em><span> ( </span><em><span>round</span></em><span> ) &#39;smash and destroy&#39; </span><span>[^ 80]</span><span> ). Thus, between the unknown Greeks &quot;nurse&quot; and Tero Chechen value </span><em><span>tour</span></em><span>The &#39;sword&#39; shows a distinct resemblance. Further, the nickname of Ares - Terit - comes close to the name of the Colchian tribe of Torets </span><span>[^ 81]</span><span> , which also begs to be compared with the name of one of the genealogical ancestors of the Chechens - Tiret - the father of Dzurdzuk </span><span>[^ 82]</span><span> .</span></p><p><span>Despite the fact that in the list of Scythian gods the name of Ares is given last, from the descriptions of Herodotus it is clear that his veneration was the dominant basis of the Scythian religion. However, the Scythians do not have a single myth about the origin of Ares. In this regard, it is important to note that of all the ethnic groups of the North Caucasus, only the Chechens have a legend that traces their origin to the ancestor of Turpal </span><span>[^ 83]</span><span> , whose name consists of the stem tur &#39;sword&#39;. Turpal is a hero-hero, in the same sense his name was known to Ossetians and Kabardians: “Turpal is the founder of the Chechen people. With some changes in the accent, this name is known both to Ossetians and Kabardians, in the sense of a hero ” </span><span>[^ 84]</span><span> .</span></p><p><span>Greek god of war Ares and Chechen sword cult Ars:</span></p><ul><li><span>military dances (&quot;descendants of Ares&quot;) of the Khalibs </span><span>[^ 85]</span><span> in full view of the enemy and combat dances of the Chechens </span><span>[^ 86]</span><span> in full view of the enemy;</span></li><li><span>the god of war of the Scythians in the form of a sword, the Chechen theonym Ars (&quot;sword&quot;), with dancing exclamations </span><em><span>Ars tokh!</span></em><span> &#39;beat Arsom&#39; and </span><em><span>Ars wai!</span></em><span> &#39;Ars is our&#39;;</span></li></ul><ul><li><span>Black Sea torets, the nickname Ares (Terit) and the ancestor of the Chechens Tiret (father of Dzurdzuk);</span></li></ul><ul><li><span>the legend about the origin of the Khalibs from Ares and the legend about the origin of the Chechens from Turpal;</span></li></ul><ul><li><span>the name of the &quot;nurse&quot; Ares Thero and the Chechen name for the sword &quot;tour&quot;. It is hard not to notice that these “coincidences” are too closely intertwined, linking Ares&#39;s “genealogy” with the ancestors of the Chechens and their “relatives”. It seems that it is hardly possible to cite materials from the Iranian languages that more illustratively explain the genesis of the cult of Ares.</span></li></ul><p><em><span>conclusions</span></em></p><p><span>The significance of the sword cult in the Scytho-Alan religion, attested by ancient authors, is clearly traced in the Chechen vocabulary and culture and is found in myths. The character of the Scytho-Alan cult, when compared with the Chechen cult of the sword, reveals a reliable correspondence and a clear explanation.</span></p><p><span>Analysis of the material of the Chechen language indicates that the unknown name of the Scythian-Alan god of war, most likely, could have been learned from the name of the Chechen sword cult Ars. The version about the origin of the Scythian name of the sword &quot;akinak&quot; from the Nakh </span><em><span>achki-nak</span></em><span> &quot;iron knife&quot; serves as additional support in favor of our assumption.</span></p><p><span>And finally, according to ancient sources, the cult of the sword is a pronounced religious attribute of the North Caucasian Alans. Accordingly, the abundance of Chechen material about the cult of the sword once again confirms the fact that the Alans consisted of a conglomerate of heterogeneous tribes (including Chechens), and not of a “single narrow ethnic” Iranian-speaking composition.</span></p><p><span></span></p></div>
+</body>
+</html>

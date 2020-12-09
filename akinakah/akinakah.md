@@ -4,9 +4,11 @@
 
 ![](https://github.com/sapouidugnatos/skolota/raw/master/akinakah/akinak-cosmic.png)
 
+*Note: I have adopted the [minimalist citation style by Anton Crombach](Anton Crombach) to save space and time, and I have left the meta-information for Russian sources in the Bibliography in Russian, since they are obscure in English-language literature and may be hard to find with the titles and authors in translation. Leaving the information in Russian means that these sources should be easier accessible to anyone who may wish to locate them.*
+
 Very little knowledge of the religious beliefs and practices of the Scythian peoples has come down to us, and that which has is often (probably unintentionally) distorted or obfuscated by the authors that recorded evidence of these beliefs and practices, most notably Herodotus. Of particular note is the only instance of Scythian ritual behavior that Herodotus records. Herodotus tells us: 
 
-> *"It is their practice to make images and altars and shrines for Ares, but for no other god... their sacrifices to Ares are of this sort. Every district in each of the governments has a structure sacred to Ares; namely, a pile of bundles of sticks three eighths of a mile wide and long, but of a lesser height, on the top of which there is a flattened four-sided surface; three of its sides are sheer, but the fourth can be ascended. Every year a hundred and fifty wagon-loads of sticks are heaped upon this; for the storms of winter always make it sink down. On this sacred pile an ancient scimitar of iron is set for each people: their image of Ares. They bring yearly sacrifice of sheep and goats and horses to this scimitar, offering to these symbols even more than they do to the other gods."*[^1] 
+> *"It is their practice to make images and altars and shrines for Ares, but for no other god... their sacrifices to Ares are of this sort. Every district in each of the governments has a structure sacred to Ares; namely, a pile of bundles of s=========rc548mmmmmmmmm3efvticks three eighths of a mile wide and long, but of a lesser height, on the top of which there is a flattened four-sided surface; three of its sides are sheer, but the fourth can be ascended. Every year a hundred and fifty wagon-loads of sticks are heaped upon this; for the storms of winter always make it sink down. On this sacred pile an ancient scimitar of iron is set for each people: their image of Ares. They bring yearly sacrifice of sheep and goats and horses to this scimitar, offering to these symbols even more than they do to the other gods."*[^1] 
 
 Unfortunately, "Ares" is one of three deities for which Herodotus does not list a Scythian name. However, this type of sword worship is also attested among the Sarmatians, Alans, Huns, and, most fortunately, the Xiongnu. Ch'ü-Hsün, in analyzing Chinese literary references to probable sword worship originating in the Xiongnu cult of *Ching lu shen*, is able to conclude that *Ching lu* was used to refer to both the sword itself and the deity that it represents, and is probably a loan of the same Iranian word which appears in Greek as *ἀκινάκης* and subsequently in Latin as *acīnacēs*.[^2] This may very well indicate that the inherited Iranian martial deity of the Scythians took on the form of the hypostasis of the Scythian sword itself. If the name of this sword can be posited as the name of the Scythian "Ares", then morphology must be considered. The word has been tentatively reconstructed in Old Persian as the neuter h-stem \**akīnakaʰ-*.[^3] If this morphology were to be applied to the lexeme within a general Old Iranian framework, it would likely yield something to the tune of \**akīnakah-*, a neuter h-stem when referring to the sword itself, which would become \**Akīnakāh* in the nom.sing.masc. when referring to the deity.
 
@@ -96,31 +98,45 @@ From these associations, a relatively clear picture of *Akīnakāh* comes into
 
 **5** Colarusso, J. *et al.* (Princeton University Press, 2016)
 
-**6** DARCHIEV, A. V. *et al.* *№24 (63) (2018)* (2017)
+**6** Courcier, A. in *Archaeometallurgy in Global Perspective: Methods and Syntheses* (eds. Roberts, B. W. & Thornton, C. P.) 579–664 (Springer, 2014)
 
-**7** Gnoli, G. *et al.* *Encyclopedia Iranica* III/5, 510–514 (1988)
+**7** DARCHIEV, A. V. *et al.* *№24 (63) (2018)* (2017)
 
-**8** Humbach, H. *et al.* (Reichert Verlag, 2012)
+**8** Gnoli, G. *et al.* *Encyclopedia Iranica* III/5, 510–514 (1988)
 
-**9** Kullanda, S. V. (Dmitry Pozharsky University, 2016)
+**9** Humbach, H. *et al.* (Reichert Verlag, 2012)
 
-**10** Mayor, A. *et al.* *Hesperia: The Journal of the American School of Classical Studies at Athens* 83, 447–493 (2014)
+**10** ISAENKO, A. *International Social Science Review* 74, 53–60 (1999)
 
-**11** Mikulka, T. (Univerzita Karlova, 2010)
+**11** Jaimoukha, A. M. (Psychology Press, 2005)
 
-**12** Norris, H. T. *Oriente Moderno* 89, 389–406 (2009)
+**12** Kullanda, S. V. (Dmitry Pozharsky University, 2016)
 
-**13** Raevskij, D. S. (Secor Publishers, 1994)
+**13** Mayor, A. *et al.* *Hesperia: The Journal of the American School of Classical Studies at Athens* 83, 447–493 (2014)
 
-**14** Teryukova, E. A. *Religiski-filozofiski raksti* XXIII, 37–48 (2017)
+**14** Mikulka, T. (Univerzita Karlova, 2010)
 
-**15** Vassileva, M. *Thracia* 81–87 (2011)
+**15** Norris, H. T. *Oriente Moderno* 89, 389–406 (2009)
 
-**16** БУЛАТБИЕВ, И. М. *НОВЫЙ ГЕРМЕС* 8, 61–81 (2016)
+**16** Raevskij, D. S. (Secor Publishers, 1994)
 
-**17** Гмыря, Л. б. *Проблемы истории, филологии, культуры* (2003)
+**17** Starostin, S. A. *et al.* (Caravan Books, 2007)
 
-**18** Челахсаев, Р. Р. *№2 (2019)* (2019)
+**18** Teryukova, E. A. *Religiski-filozofiski raksti* XXIII, 37–48 (2017)
+
+**19** Vassileva, M. *Thracia* 81–87 (2011)
+
+**20** Wadeson, L. *et al.* *Palestine Exploration Quarterly* 146, 56–73 (2014)
+
+**21** Zavyalov, V. I. *et al.* *Archeologické rozhledy* LXX, 328–334 (2018)
+
+**22** БУЛАТБИЕВ, И. М. *НОВЫЙ ГЕРМЕС* 8, 61–81 (2016)
+
+**23** Гмыря, Л. б. *Проблемы истории, филологии, культуры* (2003)
+
+**24** Дударев, С. Л. (Чечено-Ингушский государственный университет, 1991)
+
+**25** Челахсаев, Р. Р. *№2 (2019)* (2019)
 
 
 

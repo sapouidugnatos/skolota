@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>chechen-ars-eng</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+
+</style>
+</head>
+<body class='typora-export'>
+<div id='write'  class=''><p><span>К вопросу о происхождении культа меча у скифов</span></p><p><span>И. М. Булатбиев</span></p><p><span>Древние языческие верования и мифология чеченцев, к сожа­ лению, не изучены должным образом. Между тем, есть основания полагать, что комплексное изучение этой темы может пролить свет на некоторые спорные вопросы древней истории Северного Кавказа, в частности на вопрос об этническом составе племен северокавказских алан.</span></p><p><span>Выявленные нами соответствия в области религиозной иде­ ологии указывают на определенную схему взаимоотношений между ираноязычными племенами из скифской среды и нахами. В данном аспекте интерес представляет проведенный нами срав­ нительный анализ скифо-аланского божества войны и культа меча чеченцев, который уверенно позволяет говорить об их иден­ тичности. Таким образом, факт почитания одного и того же культа, как у нахов, так и у племен под определением скифо-сармато-аланы, определенно указывает в пользу необходимости кор­ ректировки некоторых устоявшихся в историографии выводов.</span></p><p><span>Сегодня вряд ли возможно рассчитывать на восстановление полного состава скифо-аланского пантеона, так же как и целост­ ной картины древних языческих верований чеченцев. С при­ нятием ислама языческие культы чеченцев отошли в прошлое, и значительная часть информации о них утратилась. Опираясь на сохранившиеся детали, можно говорить только о восстанов­ лении некоторых ее эпизодов. И одним из таких эпизодов явля­ ется культ меча, издревле бытовавший у чеченцев. Выявленный нами языковой материал о нем, как нам представляется, может способствовать решению проблемы определения генезиса скиф­ ского Ареса.</span></p><p><span>О религии сарматов известно очень мало. Возможно, что религиозное мировоззрение сарматов (по крайней мере части из них), было идентично скифскому, так как есть упомина­ние</span><span>[^1]</span><span> о почитании у сарматов меча, поклонение которому зани­ мало первенствующее место в скифских культовых обрядах. Античные источники свидетельствуют о наличии скифских божеств и в верованиях алан. Есть свидетельства о почитании аланами культа меча. Следы скифского «семибожья»</span><span>[^2]</span><span> также обнаруживаются и у алан. По сведениям анонимного Перипла Понта Эвксинского (V в.) известно, что город Феодосия в Крыму на местном «аланско-тавридском» языке назывался Ардавда, что в переводе на греческий означало επταθεος — «семибожный»</span><span>[^3]</span><span>. Но об именах «семибожного» пантеона алан в древних источни­ ках данные не обнаруживаются.</span></p><p><span>Исторические сведения о религии алан дошли до нас лишь фрагментарно. Однако следы аланских культов, известных по дан­ ным античных авторов, даже сегодня обнаруживаются в этногра­ фии, языке и культуре чеченцев. Некоторые из них (культ солнца, культ меча, семибожный культ) находят объяснения и соответ­ ствия при сравнении,с имеющимися материалами языка, этно­ графии, а также с данными о доисламских религиозных пред­ ставлениях чеченцев и дают результат, отличающийся от версии официальной историографии.</span></p><p><span>Описывая состав пантеона скифов, Геродот перечисляет имена пяти божеств: Табити, Папай, Апи, Гойтосир, Аргимпаса — и упоминает два божества, не называя их имен. Все эти божества Геродот отождествляет с богами из древнегреческой мифоло­ гии — Гестией, Зевсом и Геей, Аполлоном, Афродитой, Уранией, Гераклом и Аресом (Hdt. IV, 59). Толкование скифского пантеона Геродот производит, сопоставляя функции скифских божеств с функциями персонажей греческой мифологии</span><span>[^4]</span><span>, а отсутствие других источников с более подробной информацией о религии скифов вынуждает историков апеллировать, главным образом, к сведениям Геродота.</span></p><p><span>Из перечисленных Геродотом скифских божеств в пяти слу­ чаях (кроме Геракла и Ареса) даны их скифские имена. Следует отметить, что исследования скифо-аланской проблемы, по сло­ жившейся в исторической науке традиции, в основном принято проводить исключительно с позиций иранистики, так как право затрагивать эту тему, можно сказать, монополизировано апологе­ тами теории иранского происхождения скифов. И насколько нам известно, пока еще никем не проводилась классификация и срав­ нительный анализ доисламских верований чеченцев со скифо­ аланскими культами.</span></p><p><span>Известный иранист В. И. Абаев предпринимал попытку сопоставления языческих верований осетин со скифо-алан­ скими божествами. В частности, Абаев отождествлял аланский культ меча с христианским «Святым Георгием» осетин</span><span>[^5]</span><span>, будучи совершенно в неведении о дохристианском имени «Георгия», что никак не позволяет считать его ^отождествление обоснован­ ным. Французский мифолог Жорж Дюмезиль усматривал черты скифо-аланского бога войны в лице Батраза из нартского эпоса осетин</span><span>[^6]</span><span>. При этом следует отметить, что все без исключения ира­ нисты предпочитают обходить молчанием тот факт, что в антич­ ной литературе нет абсолютно никаких данных, ни одного намека на нартов и нартский эпос. И это при том, что со скифской средой античные авторы знакомы хорошо.</span></p><p><span>Как уже было сказано, Геродот отождествляет скифские боже­ ства с антропоморфными божествами греков, кроме бога войны, который представлен в виде меча. Арес (Арей) в греческой мифо­ логии — сын Зевса и бог коварной, вероломной войны, которому соответствует римский Марс. Удивляет тот факт, что древнейший языческий культ меча чеченцев до сих пор оставался безо всякого внимания, несмотря на то, что его влияние по сей день отража­ ется в языке и культуре чеченцев. Это как раз тот случай, когда уникальный материал находится совсем рядом, «под носом», где имя его выкрикивается в танцевальных возгласах, в то время как взоры исследователей устремлены вдаль. Но прежде чем называть его имя, обратимся к источникам.</span></p><p><span>Как известно, среди прочих скифских культов Геродот особо выделяет культ меча, которому они сооружали алтари, а жертво­ приношения ему отличались особой пышностью и жестокостью: «В каждой скифской области по округам воздвигнуты такие свя­ тилища Аресу: горы хвороста нагромождены одна на другую... На каждом таком холме водружен древний железный меч. Это и есть кумир Ареса. Этому-то мечу ежегодно приносят в жертву коней и рогатый скот, и даже еще больше, чем прочим богам» (Hdt. IV, 62). Древние авторы указывают на особое почитание скифо-аланами бога войны. В «Землеописании» Помпония Мелы (I в. н. э.) говорится: «Марс у всех главный бог; вместо изображе­ ний посвящают ему мечи и пояса, а вместо жертвенных животных убивают людей...»</span><span>[^7]</span><span>. Об особом почитании меча у алан свидетельствует римский историк Аммиан Марцеллин (ок. 330 — ок. 395 гг. н. э.): «У них не видно ни храмов, ни святилищ... они по варвар­ скому обычаю втыкают в землю обнаженный меч и с благого­ вением поклоняются ему, как Марсу...»</span><span>[^8]</span><span>. Однако ни греческие, ни римские авторы не приводят названия скифско-аланского бога войны, кроме его отождествления с греческим Аресом (римским Марсом). Этот момент уже отмечен исследователями.</span></p><p><span>Несмотря на то, что образ бога-меча у скифов и алан вызы­ вает меньше всего разногласий у исследователей, единого мнения о сущности, характере и функциях этого персонажа не существует. Это обусловлено отсутствием достаточной информации о нем. Наиболее распространенное толкование этого божества осно­ вано на его отождествлении с греческим Аресом. Но ни Геродот, ни другие поздние авторы имени этого божества не приводят. Исследователи высказывают по этому поводу различные мнения.</span></p><p><span>По мнению Л. А. Ельницкого</span><span>[^9]</span><span>, Геродот не решился при­ нять скифское наименование меча за собственное имя боже­ ства. С. А. Жебелев</span><span>[^10]</span><span> предполагал, что скифского имени у этого божества могло вообще и не быть и что само существование соб­ ственно культа меча у скифов и натолкнуло Геродота включить Ареса в скифский пантеон. С. С. Бессонова допускает несколько вариантов: «...имя табуировано; его не было вообще, это было чисто фетишистское поклонение мечу; Геродот не называет имени из-за значительного функционального совпадения культов греческого Арея и скифского»</span><span>[^11]</span><span>. А. Ю. Алексеев рассматривает два варианта: «Первый предполагает правильность геродотова сопо­ ставления культа меча с неким божеством, названным по имени греческого бога войны»; по второму варианту, Геродот мог совме­ стить сведения о скифском культе меча «...с именем эллинского бога кровавой битвы»</span><span>[^12]</span><span>.</span></p><p><span>Божество войны, которому приносились жертвы больше, чем всем остальным богам, разумеется, не могло не иметь своего имени. Трудно согласиться с тем, что, услышав рассказ о челове­ ческих жертвоприношениях в дар божеству, такой любознатель­ ный человек, как Геродот, не поинтересовался бы именем этого божества. Более чем вероятно, что в реальности так и происхо­ дило. Ведь записал же он имена других скифских божеств. Таким образом, следует полагать, что название скифского бога войны Геродоту все-таки было известно. Но почему он не назвал его? На наш взгляд, Геродота могло ввести в заблуждение сходство имени скифского божества войны с именем греческого Ареса.</span></p><p><span>Иными словами, бог войны скифов, по всей видимости, имел фонетически схожее греческому Аресу имя, вдобавок еще и функциональное совпадение, на которое указывает Бессонова. Услышав от своих информаторов идентичное греческому Аресу имя скифского бога, надо думать, «отец» истории мог прийти к мысли, что «варвары» просто переняли его у греков.</span></p><p><span>Функциональное совпадение и схожесть имен скифского и гре­ ческого божеств — наиболее вероятная причина того, что Геродот мог посчитать, что «варвары» заимствовали этот культ у греков. А посему, пишущему для греков Геродоту не было необходимости специально указывать на столь «очевидное» для грека «заимство­ вание» общеизвестного грекам божества. В пользу такого предпо­ ложения указывает также и его фраза: «Это и есть кумир Ареса» (Hdt. IV, 62), позволяющая думать, что у «отца» истории не было сомнений в том, что это было греческое божество, а меч был всего лишь манифестацией Ареса у «варваров». Такая же оценка данного божества читается и в словах Помпония Мелы: «вместо изображений посвящают ему мечи и пояса»</span><span>[^13]</span><span>. То есть, по представ­ лениям античных авторов, «варвары» посвящали богу войны мечи и пояса, тогда как греки и римляне посвящали ему изображения.</span></p><p><span>Между тем, геродотовское умалчивание имени скифского бога войны, равно как и свидетельства всех остальных античных авторов, не дают никаких оснований считать скифского Ареса трансформацией какого-либо божества из иранского мира. Также античные авторы не дают абсолютно никаких оснований искать родину Ареса в иранской среде. Попытки иранистов подыскать для Ареса иранских «родителей» основаны исключительно на том, что в историографии верховенствует мнение об ираноязычности скифов. Культ Ареса и его святилища не имеют ничего общего ни с кочевниками, ни со Степным Миром вообще: «Ни в индоиранском, ни в общеиранском эпосе этот культ не засвидетельствован»</span><span>[^14]</span><span>, а сведения о почитании меча у иранцев единичны.</span></p><p><span>Единственным свидетельством о почитании меча персами и мидийцами является сообщение Климента Александрийского (II-III вв. н. э.)</span><span>[^15]</span><span>, которое также не дает никаких оснований пола гать, что культ меча был заимствован скифами у персов или мог зародиться в иранской среде. В противном случае, это наверняка не осталось бы незаметным для античных авторов, тем более для такого любознательного человека, как Геродот. Более позд­ний автор — Афанасий Александрийский (ок. 300-373 гг. н. э.) — отмечает, что религия персов для скифов была религией чуждого для них народа: «...скифы не принимают богов персов»</span><span>[^16]</span><span>. В такой ситуации пытаться представить скифского Ареса как трансформа­цию иранского бога войны Веретрагны (или ведического Индры) можно лишь при очень сильном желании. </span></p><p><span>Но самым непреодолимым препятствием для иранистов является то факт, что об Аресе у скифов нет ни одной легенды и ни одного мифа, что отчетливо указывает на его нескифское происхождение. Из текстов же античных авторов очевидно, что ни один из них даже представления не имеет, каким образом у скифов появился этот культ.</span></p><p><span>Итак, изложенное выше подводит нас к следующему заклю­чению: культ меча зародился не у скифов (отсутствие мифа об Аресе твердо обосновывает это); попытки «породнить» культ меча скифов с божествами из иранского мира, при всем стара­нии иранистов, не раскрывают генезис Ареса; следы его обрядов в языке и в мифологии иранских народов не обнаруживаются; скифы не перенимали божество у своих врагов персов; заимство­ вание от эллинов очень сомнительно, потому как скифы «сторо­нятся не только обычаев прочих народов, но особенно эллинских» (Hdt. IV, 76). Скифы не только не принимали религию греков, но даже карали смертью за такое дело, о чем свидетельствует сам Геродот на примере судьбы скифского мудреца Анахарсиса. Разумеется, нельзя утверждать, что скифы во всем сторонились всего инородного. Влияние греков на социальную сферу «варва­ров» никак нельзя отрицать. Но в вопросах религии, как явствует из свидетельства Афанасия Александрийского, скифы были консервативны.</span></p><p><span>Судя по значимости и всеобщему у скифов почитанию, вроде бы это божество должно было быть их родное — скиф­ское, однако отсутствие «родословной» (мифов, легенд) напрочь лишает Ареса скифских корней. Поэтому вариант скифского про­исхождения Ареса никак не находит подтверждения. В этой ситуации напрашивается вопрос: может, скифы заимствовали культ бого-меча у неиранских племен, из своей же среды обитания? </span></p><p><span>Тот же Абаев не отрицал наличия в скифской среде неира­ноязычного состава: «...весьма возможно, что в состав народов, объединяемых древними под названием скифов и сарматов, вхо­дили и неиранские элементы...»</span><span>[^17]</span><span>. Данную формулировку спра­ведливее было бы начать словами «скорее всего», потому как «значительная часть “варварских” имен и названий из Северного Причерноморья скифо-сарматской эпохи средствами иранских языков разъяснена быть не может»</span><span>[^18]</span><span>.</span></p><p><span>О. Н. Трубачев полагал, что этническая среда скифов была неоднородной, и только «...часть скифов говорила по-ирански»</span><span>[^19]</span><span>. Известно, что идентичность религий не служит критерием гене­тического родства племен и это никак не противоречит данным о непринятии скифами религии «чужеземцев». Другими словами, скифы-иранцы могли заимствовать культ Ареса у соседствую­щих с ними кавказских племен («своих» не по крови, но из своей среды, или близких к ним по мировоззрению).</span></p><p><span>С учетом того, что северокавказские автохтоны (племена кобанской культуры) имели развитую технологию металлообра­ботки, регион которых являлся крупным центром производства железного оружия (мечей и кинжалов), предполагаемая схема взаимосвязей ираноязычных племен с местными автохтонами вполне согласуется. Академик Н .Я. Марр допускал даже более тесную, генетическую, связь скифов с северокавказскими пле­менами, и не только с осетинами. Не отрицая значения иран­цев в генезисе скифов, Н .Я. Марр допускал, что «...у яфетидов, прежде всего яфетидов Кавказа, со скифами есть и более существенные связи, в числе их связи, по-видимому, генетического порядка»</span><span>[^20]</span><span>.</span></p><p><span>Как отмечает X. А. Хизриев: «В этнографии скифов и народов Северного Кавказа довольно много этнокультурных параллелей. Например, на вазе из кургана Куль-Оба около г. Керчь с большим мастерством изображены скифы, одетые в бешмет, опоясанные горским ремнём, в типичных шароварах. На ногах кавказские ноговицы, а на голове известный башлык. По внешнему облику и одежде они совсем не отличаются от кавказских горцев»</span><span>[^21]</span><span>.</span></p><p><span>О связи кобанцев со Скифией пишет и Т. В. Блаватская: «Имеющийся в настоящее время археологический материал сви­детельствует о существовавших связях фракийцев с носителями кобанской культуры, обитавшими на Кавказе в конце II — начале I тысячелетия до н. э.»</span><span>[^22]</span><span>. А по мнению В. И. Козенковой, связь карпато-дунайского мира с Северным Кавказом «...вряд ли можно удовлетворительно объяснить только регулярными контактами менового характера. Речь, вероятно, может идти о каких-то этни­ческих включениях»</span><span>[^23]</span><span>.</span></p><p><span>На заимствование скифами этого культа указывает и мнение Д. С. Раевского: «...повсеместно, когда общество иранцев достигало стадии, на которой возникала потребность сложении иконографии религиозно-мифологических образов, она формировалась на инокультурной основе»</span><span>[^24]</span><span>. Исходя из такого рода вариантов взаимоотношений между ираноязычными племенами из числа скифов и предками чеченцев (кобанцами), статус «чужие» в отношении последних мог быть лишь номинальным. Иными словами, при таком раскладе представители кобанской культуры для скифов-иранцев, должно быть, вполне могли считаться своими.</span></p><p><span>Отмечая факт открытия и первого практического применения железа кавказскими племенами, французский исследователь Поль Куиссен однозначно указывает на то, что хетты заимствовали у кавказцев железный меч и его культ. Петербургский ученый, доктор исторических наук И. Ю. Шауб, который также придерживается мнения о кавказском происхождении скифского Ареса, отмечает, что Куиссен «...хорошо объясняет тот факт, что форма бого-меча на Язылыкайском рельефе — это форма кавказского железного, а не бронзового меча, распространенного в Эгеиде»</span><span>[^25]</span><span>. Сам же Куиссен о происхождении культа меча у скифов выражается однозначно: «В то время как культ меча (по крайней мере в его элементарной форме) угас в Азии, в Европе кавказцы передали его скифам, у которых через шесть веков Геродот обнаружил его в практически неизменном виде»</span><span>[^26]</span><span>. Вдобавок ко всему, непосредственным прототипом «скифского» акинака являются кобанские мечи и кинжалы</span><span>[^27]</span><span>, а также и сама традиционная форма мечей скифского типа тоже сложилась на Северном Кавказе</span><span>[^28]</span><span>.</span></p><p><span>Почитание божества войны известно у различных народов, а ритуальное оформление этого культа выражалось в различных формах. Идейная же основа культа проявляется в примерах, рас­крывающих его сущность: «По представлениям древних, желез­ные орудия и оружие обладали большой магической силой, осо­бенно колющие орудия, как соединяющие в себе два магических свойства (металл и остроту)»</span><span>[^29]</span><span>. Одно из таких «магических» свойств — «остроту», раскрывающую сущность меча, мы нахо­дим в названии древнего языческого божества воинов чеченцев — Арс, этимология имени которого означает буквально «острая грань, острие». Имя этого культа до сих пор звучит в танцевальных возгласах чеченцев, но об это чуть позже.</span></p><p><span>Как известно, в первую очередь критерием возникновения названия любого предмета в древности служила его сущность. Имена языческих богов не были исключением: «Имя, согласно понятиям древних, заключало в себе сущность божества...»</span><span>[^30]</span><span>. Чеченский теоним Арс состоит из двух основ </span><em><span>Ар</span></em><span> + </span><em><span>с</span></em><span> (</span><em><span>/са</span></em><span>). К начальной основе </span><em><span>Ар/</span></em><span> восходит значение </span><em><span>ир (ир &lt; ар)</span></em><span> ‘острый, острота’. Вторая его часть — </span><em><span>/с (са)</span></em><span> — означает ‘грань, полоса, угол’. Таким образом, название теонима Арс на чеченском языке буквально означает </span><em><span>Ар + с (ир + са)</span></em><span> ‘острая + грань’, а лезвие меча по своей сути и есть острая грань. Как очевидно, этимология чеченского теонима Арс полностью покрывает определение с у щ ­ ности меча и ножа, к основе которого закономерно восходит чеченское урс ‘нож’</span><span>[^31]</span><span>.</span></p><p><span>Вероятно, для иранистов не совсем ожидаемо сопоставление имени Ареса с этимологией чеченского названия ножа урс (мн. ч арс/аш, аш — суффикс мн. ч.). Сказанное хотелось бы предварить мнением Л. А. Ельницкого: «...при изучении древних имен, в особенности этимологически не ясных и единичных, крайне ценны любые сопоставления, из которых, посредством их соответствующей классификации и отбора, может быть получен достоверный материал для их исторического осмысления и географического опосредования»</span><span>[^32]</span><span>. Думается что вряд ли найдется более подходящее соответствие для определения сущности бога войны Ареса, чем значения «меч» и «нож» (ср. чеч. Арс).</span></p><p><span>Как известно, нож — это первое режущее оружие первобытного человека. До освоения металла оружие и некоторые другие предметы необходимости человек в основном изготовлял из камня. Для того чтобы камень резал, его нужно было, естественно, заострить (заточить), сделать острым, или выдолбить острую грань (заострить одну из сторон). Именно эта заостренная (или просто острая) грань могла превратить обычный камень в ж изненно необходимый для человека предмет. По-видимому, именно такая острая грань (</span><em><span>ар + с</span></em><span>), как определение режущего предмета, послужила основой происхождения названия для ножа (урс) у далеких предков чеченцев. Для сравнения, на языке урартов дом оружия назывался </span><em><span>uris huse</span></em><span>[^33]</span><span>: </span><em><span>uris</span></em><span> ‘оружие’, </span><em><span>huse</span></em><span> ‘дом ’ (ср. чеч. </span><em><span>арс</span></em><span>, готское </span><em><span>hairus</span></em><span> ‘меч’</span><span>[^34]</span><span>). Чеченские значения: </span><em><span>марс</span></em><span> ‘серп’ и </span><em><span>марца</span></em><span> ‘опалить’ (пранахская форма — </span><em><span>марса</span></em><span>[^35]</span><span>) — позволяю т дум ать о функциональной близости теонима Арс к культу огня или домаш него очага. Примечательно, что и римский бог войны М арс также был связан с культом плодородия и огня</span><span>[^36]</span><span>.</span></p><p><span>Н азвание этого культа имеет также добавочный эпитет Арсэла (Арсела) — </span><em><span>эла</span></em><span> ‘повелитель, бог’ (буквально «Арс повелитель»), Д анны й эпитет (</span><em><span>эла</span></em><span>), несомненно, обозначает статус теоним а. А значение названий чеченских тейпов — </span><em><span>арслой</span></em><span> (</span><em><span>Арс + лой</span></em><span>) ‘Арса люди’ и </span><em><span>арселхой</span></em><span> (</span><em><span>арс-эл + хой</span></em><span>), буквально ‘Арса повелителя лю ди’ (</span><em><span>/ло, /хо</span></em><span> — суфф. определения человека мн. ч.) — дополняю т эту картину.</span></p><p><span>Божество со схож им названием мы обнаруж иваем и в пантеоне урартийцев. Надпись, высеченная на стене скалы около озера Ван, сообщает</span><span>[^37]</span><span> о приказе царя Менуа (годы правления 810 -786 до н. э.) принести в жертву божеству Arsimela (Арсимела) двух бы ков и четы рех овец. Мы пока не обладаем информацией о функциях урартийского Арсимелы. Но подобное совпадение имен божеств трудно считать случайностью.</span></p><p><span>Божество, имевшее в древности столь огромное значение в религиозном мировоззрении людей, не могло не оставить сле­дов своего влияния в языке, на котором он возник: чеч. </span><em><span>буьрса</span></em><span> ‘грозный, суровый’ (буквально «урсовый» ‘ножный’, </span><em><span>б/</span></em><span> — класс­ный показатель), </span><em><span>морса</span></em><span> ‘грубый, жесткий’, </span><em><span>сорса</span></em><span> ‘рассерженный, разъяренный’.</span></p><p><em><span>Гӏарс</span></em><span> — идиома, выражающая совершение уверенного, сме­лого, решительного действия или поступка, в значении «отрезать, отрубить».</span></p><p><em><span>Харс</span></em><span> — идиома, обозначающая совершение быстрого дей­ствия, со значением «отрезать, отрубить».</span></p><p><em><span>Кӏарс</span></em><span> — идиома, обозначающая совершение быстрого дей­ствия в значении «отрезать» в отношении предметов неболь-ших размеров. Следует отметить, что семантика приведенных идиом не имеет ничего общего с чеченским глаголом </span><em><span>хада</span></em><span> ‘резать, отрезать’. И, как можно заметить, все они состоят из корня </span><em><span>арс</span></em><span> и обозначают понятие «отрезать» или «отрубить». Очевидно, что определение сущности меча в чеченском языке стало не только названием божества воинов, но на его основе образова-лись и различные варианты значений, определяющих его функ­циональную деятельность.</span></p><p><em><span>Этнонимы</span></em></p><p><span>Имена языческих богов издревле становились источником личных имен и этнонимов по мере их религиозной значимости. Таким же источником стал и чеченский культ меча Арс. В древ­ности люди верили в магическую силу имени, считая, что имя может повлиять или предопределить судьбу и характер человека. Вследствие этого мировоззрения появлялись такие имена, как «Отважный», «Бесстрашный» и т. п. Именем божества воинов древние нахи нарекали своих отпрысков: Арс, Арсан, Арсакъ, Арсэла (</span><em><span>эла</span></em><span> ‘повелитель’), Арснукъ, Арсмак, Арсмукъ (</span><em><span>мукъ</span></em><span> ‘рукоять’), от которых идут чеченские фамилии — Арсаев, Арсанов, Арсаков, Арсалиев, Арсанукаев, Арсамаков и др.</span></p><p><span>Влияние этого культа отразилось в ономастике и других наро­ дов. К примеру, древнегреческое </span><em><span>Аристарх</span></em><span> ‘лучший вождь’ фоне­ тически близко к чеченскому </span><em><span>Арстах</span></em><span> — </span><em><span>Арс + тах</span></em><span> ‘бьющий (уда­ряющий) Арсом’ (?). Семантика таких значений, как «арсенал» и «аристократ», в корне сливается с идеологией культа меча:</span></p><p><span>Arsenal — </span><em><span>Arse/nal</span></em><span> (англ.) 1) ‘склад оружия’, 2) ‘запас вооружений’, 3) ‘источник силы’, 4) ‘оружие’; </span><em><span>Aristokrat</span></em><span> — </span><em><span>Aris + to + krat</span></em><span> (</span><em><span>krat</span></em><span> ‘власть’), что соответствует значению «власть Ареса», или «обла­датель (власти) Ареса». Очевидно, в древности обладание Аресом (мечом) являлось атрибутом власти и особых привилегий у опре­деленной категории людей. В поддержку данного толкования мы имеем свидетельство византийского историка Ириска Панийского (V в.)</span><span>[^38]</span><span>. Интерес представляют также имена, в этимологии которых, по мнению осетиноведов, выявляется «иранская» основа:</span></p><p><span>Арс — «медведь», скиф.;</span>
+<span>Арсак — «медвежонок» (царь даев-апарнов III в. до н. э.);</span>
+<span>Арсаком — «любящий медведей», вождь скифов;</span>
+<span>Арсам — «отважный», алан.;</span>
+<span>Арсамаг/Арсамак — «отважнейший», осет.;</span>
+<span>Арсамат — «храбрейший», осет.;</span>
+<span>Арсау — «подобный медведю», осет.;</span>
+<span>Арси — «медведь», осет.;</span>
+<span>Арсой — «медвежонок», осет.;</span>
+<span>Арсук — «медвежонок», алан.</span></p><p><span>В перечисленных именах в глаза бросается большое коли­чество «разновидностей» названий «медвежонка» и «медведя». Помимо того, что образ медведя и медвежонка никак не ассоциируется с понятиями «храбрость» и «отвага», нет типологических примеров, объясняющих столь нехарактерный для царей эпитет («медвежонок»).</span></p><p><span>Бесспорно, что для скифо-аланских царей или вождей было бы куда более соблазнительнее называть именем собственного бога войны, которому они поклонялись больше, чем всем осталь­ным своим божествам. И на фоне такого сопоставления осетин-ские «вариации» значения «медведь» вряд ли могут сравниться по степени соответствия с именем чеченского божества воинов Арс. В данном случае вряд ли можно сомневаться, что значения скифского имени Арс («медведь») и осетинского Арсамат («храбрейший») более соответствуют ассоциации бога войны, нежели медведя или тем более медвежонка. Иными словами, семантика перечисленных имен более соответствует характеру божества войны чеченцев Арс, как фонетически, так и семантически, чем все вместе взятые ассоциации и характеристики медведя и медвежонка.</span></p><p><em><span>Названия чеченских тейпов, восходящих к теониму Арс</span></em></p><p><span>Названия чеченских тейпов: арсой (</span><em><span>орсой, уорсой</span></em><span>), арслой, арселой (</span><em><span>арс-элой</span></em><span> || </span><em><span>арс-элхой</span></em><span>), эрсной, арстхой (</span><em><span>арштхой, уорстхой, орстхой</span></em><span>). Бытующая версия о происхождении названия «арстхой» («карабулаки») от основы </span><em><span>арц</span></em><span> ‘гора, покрытая лесом’ неубедительна и, по нашему мнению, является ошибочной. В про­тивном случае, аналогичное название «жители лесистых скло­нов» помимо арстхой получили бы также и другие чеченские тейпы, живущие на склонах гор. По нашему мнению, значение этнонима «арстхой» нужно рассматривать как определение почи­тателей (приверженцев) культа меча Арс, также как и значения следующих этнонимов: арсой — «арсовцы; арсу принадлежащие», арслой — «Арса люди», арселой (Арс-элой) — «Арса повелителя почитающие».</span></p><p><span>Арстахой («бьющие Арсом») — одно из ответвлений тейпа ТӀерлой, родовое селение которых также именовалось Арстах: «До наших дней сохранилась этническая группа вайнахов, которые называют себя “Арселой”. Живут они в Рошни-чу, Гехи-чу»</span><span>[^39]</span><span>, (ср. чеч. </span><em><span>арсой</span></em><span> || </span><em><span>арселой</span></em><span> (от теонима Арс) с названием италий­ского племени марсы (от бога войны Марса), аналогичное назва­ние племени германцев — marsi, а также название древнегерман-ского племени херуски (</span><em><span>herusci</span></em><span>) ‘меченосцы&#39;, и готское </span><em><span>hairus</span></em><span> ‘меч’).</span></p><p><span>По преданию элистанжинцев, родоначальником их тейпа был Орс-эла</span><span>[^40]</span><span> (</span><em><span>орс</span></em><span> &lt; </span><em><span>арс</span></em><span>, </span><em><span>эла</span></em><span> ‘повелитель’). В данном контексте никак нельзя обойти вниманием этноним «аорсы» — название одного из племен, входивших в сарматский союз. Как известно, аорсы занимали территорию между Каспийским и Азовскими морями, доходившую и до предгорий Кавказа по западному побережью Каспия. В научной литературе нет данных, связывающих гене­зис аорсов с нахами, кроме того, что их название имеет сходство с названием чеченского тейпа арсой. В свете изложенного нужно признать, что этноним «аорсы» (восточный вариант названия — </span><em><span>arsi</span></em><span>) явно напрашивается для сравнения с чеченским теонимом Арс. А с учетом того, что есть сведения о почитании культа меча сарматами, вполне допустимо думать, что название «аорсы» могло возникнуть на основе чеченского культа меча Арс.</span></p><p><span>Данное предположение согласуется и с точкой зрения Я. С. Вагапова: «Чрезвычайно важно учитывать, что язык этнонима и язык этноса могут не совпадать, так как народы и пле­мена имеют не только самоназвания, но и иноназвания, дан­ные другими народами на их языках. &lt;...&gt; Если говорить применительно к Северному Кавказу сарматской эпохи, то нельзя спешить с выводом о том, что этнос, который имел, например, нахское имя, и сам обязательно был нахоязычным, а иранское —</span>
+<span>ираноязычным»</span><span>[^41]</span><span>. Вдобавок к сказанному наше предположение соответствует и мысли Н .Я. Марра</span><span>[^42]</span><span>, которую можно обозна­ чить в следующей форме: аорсы, вероятно, чуждое кавказскому миру племя, но усвоившее по религиозному признаку кавказское наименование.</span></p><p><em><span>Топонимы</span></em></p><p><span>Возникновение топонимов явление не случайное, а цепь зако­номерной взаимосвязи — закон ряда</span><span>[^43]</span><span>. В Чечне существует целый ряд топонимов и населенных пунктов, в основе названий кото­рых лежит теоним Арс. Названия следующих населенных пунктов, на наш взгляд, не только соответствует закону ряда, но и обнаруживают семантическую связь с культом меча Арс:</span></p><p><span>Аршта — «к Арсам на» (?)</span><span>[^44]</span><span>. По всей вероятности, в этой мест­ности находились святилища культа меча Арс.</span></p><p><span>Эрсана — селение</span><span>[^45]</span><span>, расположенное в 7 км к северо-востоку от Ведана. Данное название можно перевести как «Арса местность» или «к местности Арса» (с топоформантом </span><em><span>/на</span></em><span>). На карте</span><span>[^46]</span><span>, составленной еще в начале 1850-х годов наибом имама Шамиля (этническим чеченцем) Юсуфом-Хаджи Сафаровым, название этого селения дано в форме </span><em><span>Арсин</span></em><span> (&#39;Арсово (место)&#39;). Примечательно, что по преданию</span><span>[^47]</span><span> тейпа эрсеной, в Веденский район (Ичкерию) они переселились с территории Урус-Мартана, о происхождении названия которого мы поговорим ниже.</span></p><p><span>Арсиел дукъ</span><span>[^48]</span><span> — буквально «Арса повелителя хребет (?)».</span>
+<span>Арсиелаштш</span><span>[^49]</span><span> — буквально «к Арса святилищам на» (?). Как пишет А. Сулейманов, там было воздвигнуто несколько культовых мест.</span>
+<span>Арселойн лам</span><span>[^50]</span><span> — «Арселойцев гора» (или «Арса святилищ гора»).</span>
+<span>Турсиел дукъ — «Меча (бога) Сиелы хребет»</span><span>[^51]</span><span>.</span>
+<span>Турхалашка (</span><em><span>тур</span></em><span> ‘меч’) — местность, где испытывали остроту клинков</span><span>[^52]</span><span>.</span></p><p><em><span>Двойственная сущность бого-меча</span></em></p><p><span>В представлении древних людей, языческие божества обладали сущностью, представленной двойственной силой: к примеру, огонь (сила солнца) «обладал» двойственной силой — «огонь сжигаю­щий» и «огонь дающий жизнь». Божество войны и кровавой битвы Арс по своему статусу не мог не совмещать в себе эти две ипо­стаси — «гибель» и «благодать». «Классическое божество войны, кровавой битвы — греческий Арес, традиционно связываемый исключительно с военной областью, в догомеровские времена был хтоническим божеством, “приносящим благодать и гибель”...»</span><span>[^53]</span><span>. Для одних сущность бого-меча означала гибель, что для других, соответственно, являлось благодатью. «В другом из своих значений меч является символвм Глагола или Слова, с его двойной властью созидателя и разрушителя...»</span><span>[^54]</span><span>.</span></p><p><span>В данном аспекте интерес для нашей темы представляет назва­ние населенного пункта в Чечне Урус-Мартан. Еще в советские времена историками предпринимались попытки выявить этимологию его названия. Профессором В. Б. Виноградовым была выдвинута версия, что первая часть названия — урус/ — означает «русский» («русский мартан»), как «следствие нахождения там русского гар­низона царских войск». Эту же версию в своем словаре повторяет А. В. Твердый, по утверждению которого в долине одноименной реки Марта «...в XIX веке была построена русская крепость, кото­рая получила название Урус-Мартан — “Русский Мартан”»</span><span>[^55]</span><span>.</span></p><p><span>С научной точки зрения, данная версия не выдерживает ника-кой критики. И надо отметить, что это не единственный при­мер неверной трактовки значений топонимов Чечни в работе А. В. Твердого. Для беспристрастного ученого было бы непозво­лительно выводить этимологию названия на одном лишь сомни­тельном созвучии одной части этого названия (</span><em><span>урус-/</span></em><span>) с тюркским названием русских урус, в особенности если такого названия рус-ских в чеченском лексиконе не существует.</span></p><p><span>Если следовать логике А. В. Твердого, то компонент </span><em><span>урус/</span></em><span> дол­жен был пристать не только к одному названию Урус-Мартан, но также и к названиям с десяток других населенных пунктов в Чечне, где царская власть в XIX столетии устанавливала укрепления с гарнизонами войск. Еще до заложения царскими войсками укрепления на берегу реки Мартан и появления там рус­ского гарнизона селение Урус-Мартан состояло из нескольких хуторов, разбросанных по течению одноименной реки, кото­рые делились по тейповому признаку. На карте Юсуфа-Хаджи Сафарова они так и обозначены — «хутора Урусмартановские»</span><span>[^56]</span><span>. И только после окончательного завоевания Чечни жители этих хуторов для удобства контроля над ними были согнаны в одно большое селение, за которым окончательно и закрепилось название Урус-Мартан.</span></p><p><span>Название же самой реки Юсуф-Хаджи приводит в форме Урусмартан, из чего следует, что Мартан — это его усеченная форма, что в свою очередь позволяет говорить, что Урус-Мартан является русской транскрипцией чеченского Урс-Март (</span><em><span>урс</span></em><span> ‘нож’), восходящего к первоначальной форме Арс-Март (</span><em><span>урс</span></em><span> &lt;— </span><em><span>арс</span></em><span>)</span><span>[^57]</span><span>. Примечательно, что в упомянутой карте Сафарова название вто­рой реки Мартан (Фартанга), протекающей через Ачхой-Мартан, приводится в форме </span><em><span>Аршта-мартан</span></em><span>, а ачхоевское укрепле­ ние (ныне селение Ачхой-Мартан) — в форме </span><em><span>Арши-мартан</span></em><span>[^58]</span><span>. То есть как минимум до середины XIX столетия селение Ачхой-Мартан именовалось Арш-(Арс?)-Мартан. А его трансформация в нынешнюю форму, надо полагать, произошла, когда эти места заселили жители близлежащего селения Iашхой-кIуотар (Ачхой-хутор), после того как представители тейпа арстхой (карабулаки), до этого заселявшие этот район, практически всей массой пересе­лились в Турцию в бо-х годах XIX столетия.</span></p><p><span>Функция меча изначально направлена на убийство. «Гибельная» сторона бога войны — это смерть и разрушение. В чем могла выражаться его «благодатная» сторона? На чечен­ском языке </span><em><span>март</span></em><span> означает «благодать, тризна, обильная еда» (в бацбийском — </span><em><span>матр</span></em><span>, с метатезой). Семантика слова </span><em><span>март</span></em><span> восходит к первоначальному значению «ритуально чистая пища, поминальная трапеза»</span><span>[^59]</span><span>. Понятия «ритуально чистая пища» и «поминальная трапеза» имеют исключительно религиозный подтекст. Соответственно, семантика слова </span><em><span>март</span></em><span>, надо полагать, также исходит из религиозной основы обряда жертвоприноше­ния. А в честь божества войны, как известно, жертвоприношения совершались в больших количествах.</span></p><p><span>Исходя из анализа приведенных данных, нам представляется, что в семантике названия Урус-Мартан &lt; Урс-Март &lt; Арс-Март, точно также как и в названии Ачхой-Мартан &lt; Арш-Март &lt; Арс-Март)</span><span>[^60]</span><span>, высвечивается указанная нами выше «двойственная сущность» культа меча: первое — это название собственно боже­ства Арс, и второе — Март в значении «благодать (тризна)». Вероятной причиной закрепления этого названия за этими насе­ленными пунктами, надо думать, послужили проводимые некогда в этих районах культовые обряды жертвоприношения в честь культа меча Арс. Таким образом, анализ названий Урус-Мартан и Ачхой-Мартан, в соответствии с законом ряда</span><span>[^61]</span><span>, подводит нас к мысли, что этимология этих названий означает «место проведения (посвящения) тризны» (жертвоприношений) культу меча Арс.</span></p><p><em><span>Чеченский танец</span></em></p><p><span>Примеры, приведенные выше, являются лишь частью тех следов культа меча, которые донес до наших дней чеченский язык. Но следы наверняка должны были сохраниться не только от самого названия культа, но и от посвященных ему обрядов и ритуалов. И эти следы приводят нас к истокам происхождения чеченского танца. Казалось бы, какую информацию о культе меча у скифов может нам дать сегодня чеченский танец, тем более, что с момента его описания Геродотом прошло почти два с полови­ной тысячелетия? Однако, несмотря на столь огромный период времени, отделяющий нас от той эпохи, важные атрибуты этого культа, позволяющие воссоздать часть картины древней религии, неожиданно обнаруживаются в чеченском танце.</span></p><p><span>Истоки народной хореографии уходят в глубокую древность. Хореография, несомненно, является порождением обрядовой практики язычества и неотъемлемой составляющей религиоз­ных торжеств в различных культах, впоследствии в праздниках. Исследование танцевальной культуры чеченцев, к сожалению, оставляет желать лучшего. Но, несмотря на давность бытования этого культа, хореография чеченского танца не утратила свои комплексные элементы, имитирующие ритуальные действия, посвященные воинскому культу Арс. Религиозное мировоззре­ние древних чеченцев, вложенное в танец, ярко отражается в его характерных элементах. Чеченский танец — халхар, в тради­ции русского языка называемый «лезгинкой», — изначально по своему происхождению восходит к обряду воинского риту­ала. Импульсивность движений в танце характеризует качества воина — ловкость, смелость, отвагу. А наличие в танце элементов бойцовского поединка с применением холодного оружия — это имитация сражений древней эпохи войн, когда меч являлся объектом поклонения.</span></p><p><span>Говоря о происхождении чеченского танца, чеченский краевед А. С. Сулейманов пишет: «Чеченские воины на виду у врага стано­вились в широкий круг и начинали громко восклицать “Арс-вай! Арс-тох!” &lt;...&gt; и плясать, ударяя о щиты мечами-кинжалами, стре­мительно приближались к противнику. Возбужденные до неис­товства, они вступали в яростное сражение с врагом»</span><span>[^62]</span><span>. Следует отметить, что ситуация с плясками не являлась следствием беспечности или показной кичливости. Это была воинская культура — своеобразная техника вхождения в экстатический транс, используемая в бою, сочетающая в себе смертоносную ярость и невозмутимость. Подобные пляски, очевидно, способ­ствовали психологическому настрою воинов к безудержной ярости и к пренебрежению смерти, что в итоге, вероятно, лишало воинов чувства боли и усталости. В качестве аналогии можно привести поведение скандинавских берсерков перед боем, с ранних лет посвящавших себя служению Одину.</span></p><p><span>Этимология возгласа «Арс-тох!» означает буквально «Арсом бей» (</span><em><span>тох</span></em><span> ‘бить, ударить’), «Арс-вай!» — «Арс наш» (вай ‘наш’). Как очевидно, значение этих возгласов в точности соответствует характеристике и самой сущности бога войны. В данном кон­ тексте этот возглас неожиданным образом выявляет объект, которому он посвящен и который являлся наиболее значимым культом также и у скифо-алан. По всей видимости, возгласы «Арстох!» и «Арс-вай!» имели определенную знаковую роль в обрядах этого культа, а во время сражения служили командой к атаке про­тивника или сигналом готовности. Тот факт, что они оказались неотъемлемыми атрибутами чеченского танца, указывает на то, что танец изначально являлся воинским ритуалом.</span></p><p><span>В свете всего изложенного, нас преследует мысль, что нена­ званное Геродотом имя скифского бога войны, возможно, и есть название чеченского культа меча Арс. Тем более, что скиф­ское название меча акинак является «явным заимствованием»</span><span>[^63]</span><span> от пранахской основы </span><em><span>ɦahki nek</span></em><span> (</span><em><span>ачки нек</span></em><span>) ‘железный нож’ (ср. чеч. </span><em><span>ēčig</span></em><span>, инг. </span><em><span>äšk</span></em><span>, бацб. </span><em><span>ajhki</span></em><span> и </span><em><span>nek</span></em><span> ‘нож’). То есть данное сопо­ставление позволяет думать, что иранское аки-нак ‘меч’ является заимствованием от нахского ачки-нек ‘железный нож’. Данный аргумент недвусмысленно указывает на генезис скифского бого-меча.</span></p><p><span>Возглас «Арс-тох!» в усеченной форме (</span><em><span>асса</span></em><span>) мы наблюдаем в танцах и у других народов Кавказа. По всей видимости, вслед­ствие регрессивной ассимиляции (</span><em><span>арс-са</span></em><span> || </span><em><span>асса</span></em><span>) звук с погло­тил предыдущий р, в результате чего появилась усеченная форма варианта от чеченского </span><em><span>арс-са</span></em><span>. Отметим, что наблюдается он только в схожих с чеченским танцах народов Кавказа. Соседи нахов осетины также используют</span><span>[^64]</span><span> у себя в танце чеченский воз­глас «Арс-тох!». Однако ни в осетинском, ни в каком-либо дру­гом языке иранской группы он не дает значения «бей мечом» или «бей ножом». Ни на одном из иранских языков имя Ареса, при всем старании иранистов, не сближается ни с одним из иранских названий божеств и не соответствует значению, определяю­щему сущность меча или ножа.</span></p><p><span>Таким образом, из сопоставления материала чеченского языка с данными источников мы обнаруживаем, что чеченский танец сохранил и донес до наших дней важнейшие атрибуты культа меча, а именно название теонима Арс, и ритуальные элементы посвященных ему обрядов.</span></p><p><em><span>Воинские пляски «потомков Ареса»</span></em></p><p><span>В описании так называемого «Похода ю тысяч греков» у Ксенофонта — одного из командующих греческими наемни­ками, отступавших через Колхиду к Черноморскому побережью — наше внимание привлекла любопытная деталь в поведении при­черноморских халибов: «Из всех народов, через земли которых эллины проходили, халибы были самые мужественные и всту­пали врукопашную с эллинами. ...Они носили также поножи и шлемы, а у пояса кинжал вроде лаконского меча; им они резали всякого, кто попадался в их руки... когда неприятель мог их уви­деть, они пели и плясали»</span><span>[^65]</span><span>.</span></p><p><span>К поведению халибов невольно напрашивается аналогия — древний воинский ритуал чеченцев: «Предки вайнахов, при­близившись к противнику, на виду у него начинали неистовые пляски с возгласами: “Арс-вай!” “Арс-тох!”...»</span><span>[^66]</span><span>. Нельзя не при-знать, что приведенные примеры поведения халибов и чеченцев имеют явное соответствие. И в свете такого сопоставления возникает резонный вопрос: а не являются ли боевые «неистовые пля­ски с возгласами: “Арс-вай!” и “Арс-тох!”» чеченцев и «песнопения с плясками» причерноморских халибов одним и тем же боевым ритуалом воинов — характерным проявлением почитания одного и того же воинского культа? И те, и другие начинают плясать именно при виде врага... С учетом того, что халибы — это хурриты-урартийцы, и родство их языка с чеченским языком явля­ется установленным наукой фактом, возгласы (</span><em><span>Арс-тох!</span></em><span> ‘бей мечом’) при указанных обстоятельствах не знающие языка халибов греки вполне могли счесть за боевое песнопение.</span></p><p><span>В пользу нашей трактовки говорит и «родословная» халибов. В схолиях к «Аполлониеву походу Аргонавтов» происхождение хали­бов возводится именно к Аресу: «Халибами они названы от Аресова сына Халиба»</span><span>[^67]</span><span>. То есть урартийцы-халибы являлись «потомками» бога войны Ареса, а его «сын» — Халди (Халди — самоназвание халибов) — был у халибов верховным богом. В данном контексте можно привести очередную параллель: родоначальником халибов назван «сын Ареса», в то время как имя родоначальника чеченцев — Турпал</span><span>[^68]</span><span> — состоит из основы </span><em><span>тур</span></em><span> ‘меч’.</span></p><p><span>Существует и другое свидетельство о взаимосвязи чеченцев с халибами — это чеченская легенда, в которой говорится о пере­селении предков чеченцев из Передней Азии, часть которых по пути следования на Кавказ «остались жить у халибов на юговосточном побережье Черного моря»</span><span>[^69]</span><span>. Следует подчеркнуть, что в этой легенде, записанной Н. Семеновым в конце XIX века, сохранилось cajno название халибы, сошедшее со всех известных исторических источников еще в первых веках новой эры.</span></p><p><em><span>Скифо-чеченская изоглосса</span></em></p><p><span>Когда речь идет о скифских «алтарях» из хвороста, нужно исходить из того, что, должно быть, меч выносили к празд­нику, для проведения торжественного культового церемони­ ала, и по определенному сигналу водружали на вершину, где он оставался до конца церемонии. В остальное время священный меч, надо полагать, мог храниться у старейшин или вождя племени. По-видимому, это была особая ответственность, соот­ветственно и особое положение для хранителя бого-меча (ср. </span><em><span>Арис + то + крат</span></em><span> ‘обладатель властью Ареса’). Отсюда закономерно следует происхождение имен и прозвища царей, вождей (или старейшин племен) от имени божества войны.</span></p><p><span>Л. А. Ельницкий отмечает факт своеобразной «религиозной эволюции», произошедшей в религии скифов приблизительно за одно тысячелетие: «Если в рассказе Геродота обращает на себя внимание факт множественности скифских “аресов”, деревян­ные алтари которых устанавливались на родовых территориях, то из рассказа Ириска Панийского явствует, что меч Ареса явля­ется принадлежностью лишь царя в качестве символа верховной военной власти»</span><span>[^70]</span><span>.</span></p><p><span>Не вдаваясь в детали истории об «обнаружении»</span><span>[^71]</span><span> гуннским вождем Аттилой священного м еча</span><span>[^72]</span><span>, важно отметить тот факт, что для «юридического» обоснования статуса верховного правителя Аттиле потребовался священный меч Ареса. В этой связи инте­ресной представляется очередная чеченская аналогия. С древ­них времен военного предводителя чеченцы именовали Тур-да</span><span>[^73]</span><span>, что в переводе означает буквально «обладатель меча» (</span><em><span>тур</span></em><span> ‘меч’, </span><em><span>da</span></em><span> ‘обладатель, владетель, хозяин’)</span><span>[^74]</span><span>. Носителю этого титула вру-чался меч (или сабля) как атрибут власти верховного предводи­теля. Схожее название имелось и у урартийцев: главный воена­чальник государства Урарту именовался Туртан</span><span>[^75]</span><span> (ср. урарт. </span><em><span>turu</span></em><span> ‘разбивать, уничтожать’</span><span>[^76]</span><span>). Последним, кому чеченцы присвоили титул Тур-да, был Узун-Хаджи Салтинский, после провозглаше­ния им в 1919 году Северо-Кавказского эмирата. Таким образом, титул Тур-да («обладатель меча») как атрибут верховного предво-дителя, несомненно, является отголоском древнего религиозного мировоззрения чеченцев.</span></p><p><span>В исследовании культа Ареса наиболее сложным считается вопрос о его происхождении. Иранисты, как известно, склонны искать корни Ареса исключительно в пределах индоиранского мира, несмотря на то, что у индоиранцев не было воинского божества, даже близко напоминающего почитание культа меча у скифов. Между тем, название греческого Ареса сближается с именем чеченского божества войны Арс, с той лишь разницей, что его чеченская этимология четко соответствует сущности богомеча. С учетом изложенного материала эти совпадения, на наш взгляд, указывают на то, что греческий Арес — это заимствован­ный (вероятно, через хурритов) древними эллинами у далеких предков чеченцев культ меча Арс.</span></p><p><span>Греческий миф об Аресе никак не указывает</span><span>[^77]</span><span> на его греческое происхождение. При этом большинство богов из греческого пан­теона не только негреческого происхождения, но и сама греческая теогония (Гесиода) (Hes. Th.) заимствована</span><span>[^78]</span><span> греками именно из хурритской мифологии. Вдобавок к этому, древнегреческий автор Павсаний (II в. н. э.) считает родиной Ареса именно Кавказ: «...из всех храмов, построенных по этой дороге, самым древ­ним является святилище Ареса... статую, говорят, привезли сюда Диоскуры из Колхиды. Ареса называют здесь Теритом от Теро, которая считается кормилицей Ареса. Очень может быть, что название Терита заимствовано от колхов, так как эллины не знают аресовой кормилицы Теро; мне кажется, однако, что прозвание “Терит&quot; [т. е. зверский] дано Аресу не от кормилицы, а потому, что, выступив в бой, нельзя иметь чувства кротости к врагу, подобно тому, как у Гомера сказано об Ахилле: “как лев, о свирепствах лишь мыслит”»</span><span>[^79]</span><span>.</span></p><p><span>Древнегреческий автор не только считает, что греческий бог Арес имеет кавказское происхождение, но и уверен в ошибоч­ности толкования и прозвища Ареса — «Терит», считающегося (по мнению греков) якобы происходящим от «кормилицы» Теро. И здесь мы снова имеем несколько схождений, явно указывающих на «родословную» «греческого» Ареса. Первое — это сход­ство имени «кормилицы» — Теро — с одним из чеченских наи­менований меча — тур. На фоне такого сопоставления значение «зверский», как очевидно, совершенно не стыкуется с образом «женщины-кормилицы», но четко соответствует характеристике бога войны и кровавой битвы (ср. урарт. </span><em><span>turu</span></em><span> (</span><em><span>туру</span></em><span>) ‘разбивать, уничтожать’</span><span>[^80]</span><span>). Таким образом, между неизвестной грекам «кор­милицей» Теро и чеченским значением </span><em><span>тур</span></em><span> ‘меч’ проглядывается отчетливое сходство. Далее, прозвище Ареса — Терит — сближа­ется с названием колхидского племени торетов</span><span>[^81]</span><span>, которое также напрашивается на сопоставление с именем одного из генеалоги­ческих предков чеченцев — Тирет — отец Дзурдзука</span><span>[^82]</span><span>.</span></p><p><span>Несмотря на то, что в списке скифских богов имя Ареса при­водится последним, из описаний Геродота явствует, что его почитание являлось главенствующей основой скифской религии. Однако у скифов нет ни одного мифа о происхождении Ареса. В этой связи важно отметить, что из всех этнических групп Северного Кавказа только у чеченцев существует легенда, возводящая их происхождение к родоначальнику Турпал</span><span>[^83]</span><span>, имя кото­рого состоит из основы тур ‘меч’. Турпал — это герой-богатырь, в этом же значении его имя было известно осетинам и кабардинцам: «Турпал родоначальник чеченского народа. С некоторыми изменениями в выговоре, название это известно и осетинам и кабардинцам, в значении богатыря»</span><span>[^84]</span><span>.</span></p><p><span>Греческий бог войны Арес и чеченский культ меча Арс:</span></p><ul><li><span>воинские пляски («потомков Ареса») халибов</span><span>[^85]</span><span> на виду у про­тивника и боевые пляски чеченцев</span><span>[^86]</span><span> на виду у противника;</span></li><li><span>бог войны скифов в виде меча, чеченский теоним Арс («меч»), с танцевальными возгласами </span><em><span>Арс тох!</span></em><span> ‘бей Арсом’ и </span><em><span>Арс вай!</span></em><span> ‘Арс наш’;</span></li></ul><ul><li><span>причерноморские тореты, прозвище Ареса (Терит) и предок чеченцев Тирет (отец Дзурдзука);</span></li></ul><ul><li><span>легенда о происхождении халибов от Ареса и легенда о про­исхождении чеченцев от Турпала;</span></li></ul><ul><li><span>имя «кормилицы» Ареса Теро и чеченское наименование меча «тур». Трудно не заметить, что слишком тесно сплетены эти «совпадения», связывающие «родословную» Ареса с пред­ками чеченцев и их «родней». Думается, вряд ли можно привести из иранских языков материалы, более показательно объясняю­щие генезис культа Ареса.</span></li></ul><p><em><span>Выводы</span></em></p><p><span>Значимость культа меча в религии скифо-алан, засвиде­тельствованная древними авторами, отчетливо прослежива-ется в чеченской лексике и культуре и обнаруживается в мифах. Характер скифо-аланского культа при сравнении с чеченским культом меча обнаруживает надежное соответствие и внятное объяснение.</span></p><p><span>Анализ материала чеченского языка указывает на то, что неиз­вестное название скифо-аланского бога войны, по всей видимости, могло быть усвоено от имени чеченского культа меча Арс. Версия о происхождении скифского названия меча «акинак» от нахского </span><em><span>ачки-нак</span></em><span> ‘железный нож’ служит дополнительной опорой в пользу нашего предположения.</span></p><p><span>И наконец, пб данным античных источников, культ меча явля­ется выраженным религиозным атрибутом северокавказских алан. Соответственно, обилие чеченского материала о культе меча лишний раз подтверждает тот факт, что аланы состояли из конгломерата разнородных племен (в том числе и чеченцев), а не из «единого узко-этнического» ираноязычного состава.</span></p><p><span></span></p></div>
+</body>
+</html>
