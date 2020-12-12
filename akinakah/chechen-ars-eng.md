@@ -1,4 +1,4 @@
-# Before the eviction of the Chechens, there were two small villages, the names of which also go back to the root basis of the ars: Lakha-Orsoy and Lakha-Orsoy (Upper Orsoy, Lower Orsoy). See: A.S.Suleimanov, Toponymy of Chechnya. P. 243. Apparently, the name of the inhabited Yarsh-mard (Ibid. P. 422), in accordance with the law of the series, consists of the same number of names and is a transformation of the form Ars-March \ \ Arsh-March> Yarsh-Mard , contrary to the interpretation of some researchers about its Turkic origin.On the origin of the sword cult among the Scythians
+# On the origin of the sword cult among the Scythians
 
 *by I. M. Bulatbiev*
 
