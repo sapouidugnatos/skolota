@@ -4,7 +4,7 @@
 
 ![](https://github.com/sapouidugnatos/skolota/raw/master/akinakah/akinak-cosmic.png)
 
-*Note: I have adopted the [minimalist citation style by Anton Crombach](Anton Crombach) to save space and time, and I have left the meta-information for Russian sources in the Bibliography in Russian, since they are obscure in English-language literature and may be hard to find with the titles and authors in translation. Leaving the information in Russian means that these sources should be easier accessible to anyone who may wish to locate them.*
+*Note: I have adopted the [minimalist citation style by Anton Crombach](http://anton.cromba.ch/2016/02/07/a-minimal-citation-stylefor-grant-proposals/) to save space and time, and I have left the meta-information for Russian sources in the Bibliography in Russian, since they are obscure in English-language literature and may be hard to find with the titles and authors in translation. Leaving the information in Russian means that these sources should be easier accessible to anyone who may wish to locate them.*
 
 Very little knowledge of the religious beliefs and practices of the Scythian peoples has come down to us, and that which has is often (probably unintentionally) distorted or obfuscated by the authors that recorded evidence of these beliefs and practices, most notably Herodotus. Of particular note is the only instance of Scythian ritual behavior that Herodotus records. Herodotus tells us: 
 
@@ -26,11 +26,11 @@ In fact, the importance of metallurgy in the Caucasus is known from a very early
 
 The dissemination of metallurgic technologies through the Eastern Caucasus to the Pontic-Caspian steppes beyond is also well-known,[^7] as well as the area's general mastery of metallurgic techniques from the Koban culture onwards, as noted by Jaimoukha:
 
-> *"Metallurgy was at an advanced stage of development, with differentiated professionals organized at the clan level. "*[^8]
+> *"Metallurgy was at an advanced stage of development, with differentiated professionals organized at the clan level."*[^8]
 
 Even further, the influence of Caucasian metallurgy on the later Scythians and Sarmatians has received considerable attention.[^9] This exchange at the beginning of the interactions between the two groups is summarized well by Jaimoukha:
 
-> *"Archaeological finds show that there was a healthy cultural exchange between the Sarmatians and the North Caucasians. Caucasian-made objects were found in abundance in Sarmatian burial grounds. The Nakh seem to have been on the whole more advanced in their material culture than the Iranians, who were, among other things, not familiar with foundry work and the potter’s wheel. On the other hand, the Sarmatians, with their tribal kings and aristocracy, had superior social organization and military know-how (Ya.Z. Akhmadov 2002)"*[^10]
+> *"Archaeological finds show that there was a healthy cultural exchange between the Sarmatians and the North Caucasians. Caucasian-made objects were found in abundance in Sarmatian burial grounds. The Nakh seem to have been on the whole more advanced in their material culture than the Iranians, who were, among other things, not familiar with foundry work and the potter’s wheel. On the other hand, the Sarmatians, with their tribal kings and aristocracy, had superior social organization and military know-how (Ya.Z. Akhmadov 2002)."*[^10]
 
 This tradition of metallurgy was eventually inherited by the latest Iranian steppe tribes to inhabit the Northern Caucasus, the Alans:
 
@@ -40,7 +40,7 @@ Metallurgy may have in fact been so important to the early Medieval Alans that s
 
 Considering this quasi-religious importance of iron-working in the Caucasus, the influence that Caucasian metallurgy had on Scythian culture, as well as the fact that the Scythians certainly borrowed metallurgic, and possibly therefore theophoric, terminology from the ancestral Nakh language, it only makes sense to devote some more attention to Nakh culture. Fortunately, this task has already been attempted by I. M. Bulatbiev, whose essay assessing the Scythian sword cult from the angle of Nakh language and culture has been provided [here](https://sapouidugnatos.github.io/skolota/akinakah/chechen-ars-eng.html) in (admittedly Google-assisted) unofficial English translation for the first time.[^13] Bulatbiev reconstructs and etymologizes the Chechen theonym, *Ars*:
 
-> *"As you know, first of all, the criterion for the emergence of the name of any object in ancient times was its essence. The names of the pagan gods were no exception: "The name, according to the concepts of the ancients, contained the essence of the deity ..." . The Chechen theonym Ars consists of two bases Ar + s  ( / sa). The initial base Ar/ ascends the meaning ir (ir < ar) ‘sharp, sharpness’. Its second part - /s (sa) - means ‘face, strip, angle’. Thus, the name of the theonym Ars in the Chechen language literally means Ar + s (ir + sa) ‘sharp + edge’, and the blade of a sword is essentially a sharp edge. Obviously, the etymology of the Chechen theonym Ars completely covers the definition of the power of a sword and a knife, to which the Chechen urs ‘knife’ naturally ascends."*[^14]
+> *"As you know, first of all, the criterion for the emergence of the name of any object in ancient times was its essence. The names of the pagan gods were no exception: "The name, according to the concepts of the ancients, contained the essence of the deity ..." . The Chechen theonym Ars consists of two bases Ar + s  (/sa). The initial base Ar/ ascends the meaning ir (ir < ar) ‘sharp, sharpness’. Its second part - /s (sa) - means ‘face, strip, angle’. Thus, the name of the theonym Ars in the Chechen language literally means Ar + s (ir + sa) ‘sharp + edge’, and the blade of a sword is essentially a sharp edge. Obviously, the etymology of the Chechen theonym Ars completely covers the definition of the power of a sword and a knife, to which the Chechen urs ‘knife’ naturally ascends."*[^14]
 
 Bulatbiev also discusses a few epithets associated with this theonym:
 
@@ -50,7 +50,7 @@ Bulatbiev also discusses a few epithets associated with this theonym:
 
 Bulatbiev also observes how this theonym may have been preserved in Chechen dance traditions:
 
-> *"Speaking about the origin of the Chechen dance, the Chechen ethnographer AS Suleimanov writes: “Chechen warriors, in front of the enemy, stood in a wide circle and began to loudly exclaim 'Ars-wai! Ars-tokh!' <...> and dancing, striking the shields with swords and daggers, they were rapidly approaching the enemy. Excited to the point of fury, they entered into a fierce battle with the enemy"... The etymology of the exclamation "Ars-tokh!" literally means "strike with Ars" ( tokh 'beat, hit'), "Ars-vai!" - "Our Ars" ( vai 'our' )."*[^17]
+> *"Speaking about the origin of the Chechen dance, the Chechen ethnographer AS Suleimanov writes: “Chechen warriors, in front of the enemy, stood in a wide circle and began to loudly exclaim 'Ars-wai! Ars-tokh!' <...> and dancing, striking the shields with swords and daggers, they were rapidly approaching the enemy. Excited to the point of fury, they entered into a fierce battle with the enemy"... The etymology of the exclamation "Ars-tokh!" literally means "strike with Ars" ( tokh 'beat, hit'), "Ars-vai!" - "Our Ars" (vai 'our')."*[^17]
 
 Vestiges of sword worship among the various peoples of the Northeastern Caucasus can be even further elucidated by later Islamic descriptions of the peoples of the Eastern Caucasus. From Norris, quoting Abū Ḥāmid:
 
