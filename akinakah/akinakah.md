@@ -34,7 +34,7 @@ Even further, the influence of Caucasian metallurgy on the later Scythians and S
 
 This tradition of metallurgy was eventually inherited by the latest Iranian steppe tribes to inhabit the Northern Caucasus, the Alans:
 
-> *"Many ancient Greek and Latin authors reported that among all the valiant peoples of the first centuries of CE, the Alans had the best military iron equipment. Tacitus wrote that the main power of the Alans was represented by their hard cavalry. It was recruited from the smart mobility. The Alanic rider wore the firm iron helmet and a coat of mail and used iron stirrups. His horse was also protected by an iron corslet. He was armed with the long spear tipped with an iron head and terribly long iron sword which could smash all the kinds of defense (Tacitus, Historiae, I, 79). Later, Arabic authors also described the wonderful Alanic sabers made of the highest quality steel."*[^11]
+> *"Many ancient Greek and Latin authors reported that among all the valiant peoples of the first centuries of CE, the Alans had the best military iron equipment. Tacitus wrote that the main power of the Alans was represented by their hard cavalry. It was recruited from the smart [nobility]. The Alanic rider wore the firm iron helmet and a coat of mail and used iron stirrups. His horse was also protected by an iron corslet. He was armed with the long spear tipped with an iron head and terribly long iron sword which could smash all the kinds of defense (Tacitus, Historiae, I, 79). Later, Arabic authors also described the wonderful Alanic sabers made of the highest quality steel."*[^11]
 
 Metallurgy may have in fact been so important to the early Medieval Alans that some metallurgic themes have have almost certainly been preserved in the folklore of the Ossetians, a Caucasus people and partial-descendant of the Alans,[^12] although probably not with the same kind of intentionality that some scholars might argue for.
 
@@ -70,7 +70,7 @@ There is also evidence to indicate that this sword veneration survived in the re
 
 These probable survivals of Caucasian sword veneration in the Islamic era, are also occasionally accompanied by descriptions of probable rites of fertility. These rites have been described in Derbend:
 
-> *"In Derbend, in March, blue, or sundty coloured clothes, are allowed, though only white should be worn at harvest time in the summer. Only this ensures that the rain will fall. Wearing a coloured dress will cause a drought and with it the total destruction of the fruit crop."*[^24]
+> *"In Derbend, in March, blue, or sundry coloured clothes, are allowed, though only white should be worn at harvest time in the summer. Only this ensures that the rain will fall. Wearing a coloured dress will cause a drought and with it the total destruction of the fruit crop."*[^24]
 
 Among the Tabasarans:
 
