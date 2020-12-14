@@ -156,49 +156,49 @@ From these associations, a relatively clear picture of *Akīnakāh* comes into
 
 **3** Boyce, M. (E.J. Brill, 1982)
 
-**4** CH’Ü-HSÜN, K. *Central Asiatic Journal* 5, 221–232 (1959)
+**4** Ch’ü Hsün, K. *Central Asiatic Journal* 5, 221–232 (1959)
 
 **5** Colarusso, J. *et al.* (Princeton University Press, 2016)
 
 **6** Courcier, A. in *Archaeometallurgy in Global Perspective: Methods and Syntheses* (eds. Roberts, B. W. & Thornton, C. P.) 579–664 (Springer, 2014)
 
-**7** DARCHIEV, A. V. *et al.* *№24 (63) (2018)* (2017)
+**7** Gnoli, G. *et al.* *Encyclopedia Iranica* III/5, 510–514 (1988)
 
-**8** Gnoli, G. *et al.* *Encyclopedia Iranica* III/5, 510–514 (1988)
+**8** Humbach, H. *et al.* (Reichert Verlag, 2012)
 
-**9** Humbach, H. *et al.* (Reichert Verlag, 2012)
+**9** Isaenko, A. *International Social Science Review* 74, 53–60 (1999)
 
-**10** ISAENKO, A. *International Social Science Review* 74, 53–60 (1999)
+**10** Jaimoukha, A. M. (Psychology Press, 2005)
 
-**11** Jaimoukha, A. M. (Psychology Press, 2005)
+**11** Kullanda, S. V. (Dmitry Pozharsky University, 2016)
 
-**12** Kullanda, S. V. (Dmitry Pozharsky University, 2016)
+**12** Mayor, A. *et al.* *Hesperia: The Journal of the American School of Classical Studies at Athens* 83, 447–493 (2014)
 
-**13** Mayor, A. *et al.* *Hesperia: The Journal of the American School of Classical Studies at Athens* 83, 447–493 (2014)
+**13** Mikulka, T. (Univerzita Karlova, 2010)
 
-**14** Mikulka, T. (Univerzita Karlova, 2010)
+**14** Norris, H. T. *Oriente Moderno* 89, 389–406 (2009)
 
-**15** Norris, H. T. *Oriente Moderno* 89, 389–406 (2009)
+**15** Raevskij, D. S. (Secor Publishers, 1994)
 
-**16** Raevskij, D. S. (Secor Publishers, 1994)
+**16** Starostin, S. A. *et al.* (Caravan Books, 2007)
 
-**17** Starostin, S. A. *et al.* (Caravan Books, 2007)
+**17** Teryukova, E. A. *Religiski-filozofiski raksti* XXIII, 37–48 (2017)
 
-**18** Teryukova, E. A. *Religiski-filozofiski raksti* XXIII, 37–48 (2017)
+**18** Vassileva, M. *Thracia* 81–87 (2011)
 
-**19** Vassileva, M. *Thracia* 81–87 (2011)
+**19** Wadeson, L. *et al.* *Palestine Exploration Quarterly* 146, 56–73 (2014)
 
-**20** Wadeson, L. *et al.* *Palestine Exploration Quarterly* 146, 56–73 (2014)
+**20** Zavyalov, V. I. *et al.* *Archeologické rozhledy* LXX, 328–334 (2018)
 
-**21** Zavyalov, V. I. *et al.* *Archeologické rozhledy* LXX, 328–334 (2018)
+**21** Булатбиев, И. М. *НОВЫЙ ГЕРМЕС* 8, 61–81 (2016)
 
-**22** БУЛАТБИЕВ, И. М. *НОВЫЙ ГЕРМЕС* 8, 61–81 (2016)
+**22** Гмыря, Л. б. *Проблемы истории, филологии, культуры* (2003)
 
-**23** Гмыря, Л. б. *Проблемы истории, филологии, культуры* (2003)
+**23** Дарчиев, А. В. *Известия СОИГСИ* (2017)
 
 **24** Дударев, С. Л. (Чечено-Ингушский государственный университет, 1991)
 
-**25** Челахсаев, Р. Р. *№2 (2019)* (2019)
+**25** Челахсаев, Р. Р. *Вестник Владикавказского научного центра,* 19, (2019)
 
 
 
@@ -218,9 +218,9 @@ From these associations, a relatively clear picture of *Akīnakāh* comes into
 [^11]: Isaenko 1999, p. 57. 
 [^12]: Ibid. 
 [^13]: There are likely still textual and translation errors, despite editing. There were some Russian abbreviations in the footnotes that I wasn't familiar with. In those cases, I simply transcribed the Russian abbreviation as written.
-[^14]: БУЛАТБИЕВ 2016.
+[^14]: Булатбиев 2016.
 [^15]: Starostin 2007.
-[^16]: БУЛАТБИЕВ 2016.
+[^16]: Булатбиев 2016.
 [^17]: Ibid.
 [^18]: Ibid.
 [^19]: Norris 2009, p. 397. 
@@ -231,7 +231,7 @@ From these associations, a relatively clear picture of *Akīnakāh* comes into
 [^24]: Norris 2009, p. 396.
 [^25]: Гмыря 2003, p. 4;
 [^26]: Teryukova 2017, p. 43.
-[^27]:Darchiev 2017.
+[^27]:Дарчиев 2017.
 [^28]:Raevskij 1993, pp. 20-21. 
 [^29]: Vassileva 2011.
 [^30]: Wadeson 2014.
@@ -240,7 +240,7 @@ From these associations, a relatively clear picture of *Akīnakāh* comes into
 [^33]: Colarusso 2016, notes 6 & 19. 
 [^34]: See Bailey 1988.
 [^35]: Colarusso 2016., note 6. 
-[^36]: Darchiev 2017 p. 5. 
+[^36]: Дарчиев 2017 p. 5. 
 [^37]: Humbach 2012, pp. 4-5.
 [^38]: Gnoli 1988. 
 [^39]: Boyce 1982 p. 41.
