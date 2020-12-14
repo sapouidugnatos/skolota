@@ -221,27 +221,27 @@ From these associations, a relatively clear picture of *Akīnakāh* comes into
 [^14]: БУЛАТБИЕВ 2016.
 [^15]: Starostin 2007.
 [^16]: БУЛАТБИЕВ 2016.
-[^16]: Ibid.
 [^17]: Ibid.
-[^18]: Norris 2009, p. 397. 
-[^19]: Ibid. p. 292.
-[^20]: Ibid.
-[^21]: Teryukova 2017, pp. 42-43.
-[^22]: Гмыря 2003, p. 7;
-[^23]: Norris 2009, p. 396.
-[^24]: Гмыря 2003, p. 4;
-[^25]: Teryukova 2017, p. 43.
-[^26]:Darchiev 2017.
-[^27]:Raevskij 1993, pp. 20-21. 
-[^28]: Vassileva 2011.
-[^29]: Wadeson 2014.
-[^30]: Colarusso 2016, pp. XLII-XLV.
-[^31]: Atwood 2013, pp. 61-68.
-[^32]: Colarusso 2016, notes 6 & 19. 
-[^33]: See Bailey 1988.
-[^34]: Colarusso 2016., note 6. 
-[^35]: Darchiev 2017 p. 5. 
-[^36]: Humbach 2012, pp. 4-5.
-[^37]: Gnoli 1988. 
-[^38]: Boyce 1982 p. 41.
-[^39]: Malandra 2004.
+[^18]: Ibid.
+[^19]: Norris 2009, p. 397. 
+[^20]: Ibid. p. 292.
+[^21]: Ibid.
+[^22]: Teryukova 2017, pp. 42-43.
+[^23]: Гмыря 2003, p. 7;
+[^24]: Norris 2009, p. 396.
+[^25]: Гмыря 2003, p. 4;
+[^26]: Teryukova 2017, p. 43.
+[^27]:Darchiev 2017.
+[^28]:Raevskij 1993, pp. 20-21. 
+[^29]: Vassileva 2011.
+[^30]: Wadeson 2014.
+[^31]: Colarusso 2016, pp. XLII-XLV.
+[^32]: Atwood 2013, pp. 61-68.
+[^33]: Colarusso 2016, notes 6 & 19. 
+[^34]: See Bailey 1988.
+[^35]: Colarusso 2016., note 6. 
+[^36]: Darchiev 2017 p. 5. 
+[^37]: Humbach 2012, pp. 4-5.
+[^38]: Gnoli 1988. 
+[^39]: Boyce 1982 p. 41.
+[^40]: Malandra 2004.
