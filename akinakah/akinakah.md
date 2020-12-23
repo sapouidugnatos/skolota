@@ -4,6 +4,32 @@
 
 ![](https://github.com/sapouidugnatos/skolota/raw/master/akinakah/akinak-cosmic.png)
 
+> *Akīnakāh jaiṇti! Akīnakāh ahmākahi̯a!*
+>
+> *"Akīnakāh strikes! Our Akīnakāh!"*
+>
+> *Arsāh jaiṇti! Arsāh ahmākahi̯a!*
+>
+> *"Arsāh strikes! Our Arsāh!"*
+>
+> *Janata Akīnakaŋhōi! Akīnakaŋhōi ahmākahi̯a!*
+>
+> *"Strike for Akīnakāh! Our Akīnakāh!"*
+>
+> *Janata Arsaŋhōi! Arsaŋhōi ahmākahi̯a!*
+>
+> *"Strike for Arsāh! Our Arsāh!"*
+>
+> *Janata Akīnakaŋhā! Akīnakaŋhā ahmākahi̯a!*
+>
+> *"Strike with Akīnakāh! With Our Akīnakāh!"*
+>
+> *Janata Arsaŋhā! Arsaŋhā ahmākahi̯a!*
+>
+> *"Strike with Arsāh! With Our Arsāh!"*
+
+> *(An amateur attempt at call-and-response in Old Iranian)*
+
 *Note: I have adopted the [minimalist citation style by Anton Crombach](http://anton.cromba.ch/2016/02/07/a-minimal-citation-stylefor-grant-proposals/) to save space and time, and I have left the meta-information for Russian sources in the Bibliography in Russian, since they are obscure in English-language literature and may be hard to find with the titles and authors in translation. Leaving the information in Russian means that these sources should be easier accessible to anyone who may wish to locate them.*
 
 Very little knowledge of the religious beliefs and practices of the Scythian peoples has come down to us, and that which has is often (probably unintentionally) distorted or obfuscated by the authors that recorded evidence of these beliefs and practices, most notably Herodotus. Of particular note is the only instance of Scythian ritual behavior that Herodotus records. Herodotus tells us: 
