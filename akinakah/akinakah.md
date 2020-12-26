@@ -4,31 +4,21 @@
 
 ![](https://github.com/sapouidugnatos/skolota/raw/master/akinakah/akinak-cosmic.png)
 
-> *Akīnakāh jaiṇti! Akīnakāh ahmākahi̯a!*
->
-> *"Akīnakāh strikes! Our Akīnakāh!"*
->
-> *Arsāh jaiṇti! Arsāh ahmākahi̯a!*
->
-> *"Arsāh strikes! Our Arsāh!"*
->
-> *Janata Akīnakaŋhōi! Akīnakaŋhōi ahmākahi̯a!*
->
-> *"Strike for Akīnakāh! Our Akīnakāh!"*
->
-> *Janata Arsaŋhōi! Arsaŋhōi ahmākahi̯a!*
->
-> *"Strike for Arsāh! Our Arsāh!"*
->
-> *Janata Akīnakaŋhā! Akīnakaŋhā ahmākahi̯a!*
->
-> *"Strike with Akīnakāh! With Our Akīnakāh!"*
->
-> *Janata Arsaŋhā! Arsaŋhā ahmākahi̯a!*
->
-> *"Strike with Arsāh! With Our Arsāh!"*
+> *Akīnakāh ǰánti! Akīnakāh ahmākah!
+>Arsāh ǰánti! Arsāh ahmākah!
+> J̌áta Akīnakahai̯! Akīnakahai̯ ahmākahmāi̯!
+>J̌áta Arsahai̯! Arsahai̯ ahmākahmāi̯!
+> J̌áta AkīnakahaH! AkīnakahaH ahmākanā!
+>J̌áta ArsahaH! ArsahaH ahmākanā!*
+> 
+>*"Akīnakāh strikes! Our Akīnakāh! 
+> Arsāh strikes! Our Arsāh!
+>Strike for Akīnakāh! For our Akīnakāh! 
+> Strike for Arsāh! For our Arsāh
+>Strike with Akīnakāh! With Our Akīnakāh!
+> Strike with Arsāh! With Our Arsāh!"*
 
-> *(An amateur attempt at call-and-response in Old Iranian)*
+> *(An amateur attempt at call-and-response in Proto-Iranian)*
 
 *Note: I have adopted the [minimalist citation style by Anton Crombach](http://anton.cromba.ch/2016/02/07/a-minimal-citation-stylefor-grant-proposals/) to save space and time, and I have left the meta-information for Russian sources in the Bibliography in Russian, since they are obscure in English-language literature and may be hard to find with the titles and authors in translation. Leaving the information in Russian means that these sources should be easier accessible to anyone who may wish to locate them.*
 
